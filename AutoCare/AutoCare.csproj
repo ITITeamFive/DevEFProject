@@ -79,6 +79,48 @@
     <Compile Include="models\WorkerAdvancePayment.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucClients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucClients.Designer.cs">
+      <DependentUpon>ucClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucDisplayBills.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDisplayBills.Designer.cs">
+      <DependentUpon>ucDisplayBills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucMaintenanceBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMaintenanceBill.Designer.cs">
+      <DependentUpon>ucMaintenanceBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucRepository.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucRepository.Designer.cs">
+      <DependentUpon>ucRepository.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSuppliers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSuppliers.Designer.cs">
+      <DependentUpon>ucSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSuppliesBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSuppliesBill.Designer.cs">
+      <DependentUpon>ucSuppliesBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucWorkers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucWorkers.Designer.cs">
+      <DependentUpon>ucWorkers.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +133,27 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ucClients.resx">
+      <DependentUpon>ucClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDisplayBills.resx">
+      <DependentUpon>ucDisplayBills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMaintenanceBill.resx">
+      <DependentUpon>ucMaintenanceBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucRepository.resx">
+      <DependentUpon>ucRepository.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSuppliers.resx">
+      <DependentUpon>ucSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSuppliesBill.resx">
+      <DependentUpon>ucSuppliesBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucWorkers.resx">
+      <DependentUpon>ucWorkers.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
