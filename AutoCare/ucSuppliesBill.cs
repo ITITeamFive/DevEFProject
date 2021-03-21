@@ -8,11 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AutoCare.models;
+using System.Collections.ObjectModel;
 
 namespace AutoCare
 {
     public partial class ucSuppliesBill : DevExpress.XtraEditors.XtraUserControl
     {
+        ObservableCollection<Item> billItems = new ObservableCollection<Item>();
+
         private static ucSuppliesBill _instance;
 
         public static ucSuppliesBill Instance
@@ -28,6 +32,8 @@ namespace AutoCare
         public ucSuppliesBill()
         {
             InitializeComponent();
+
+            gcBillItems.DataSource = billItems;
         }
     }
 }

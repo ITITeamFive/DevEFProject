@@ -41,6 +41,9 @@
     <Reference Include="DevExpress.XtraBars.v20.2" />
     <Reference Include="DevExpress.Sparkline.v20.2.Core" />
     <Reference Include="DevExpress.XtraEditors.v20.2" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -72,9 +75,11 @@
     <Compile Include="models\CenterContext.cs" />
     <Compile Include="models\Client.cs" />
     <Compile Include="models\ClientBill.cs" />
+    <Compile Include="models\ClientBillItem.cs" />
     <Compile Include="models\Item.cs" />
     <Compile Include="models\Supplier.cs" />
     <Compile Include="models\SupplierBill.cs" />
+    <Compile Include="models\SupplierBillItem.cs" />
     <Compile Include="models\Worker.cs" />
     <Compile Include="models\WorkerAdvancePayment.cs" />
     <Compile Include="Program.cs" />
@@ -124,6 +129,7 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -156,6 +162,8 @@
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\AutoCare.models.SupplierBill.datasource" />
+    <None Include="Properties\DataSources\AutoCare.models.SupplierBillItem.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

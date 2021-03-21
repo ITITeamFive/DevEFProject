@@ -15,9 +15,11 @@ namespace AutoCare.models
         public virtual DbSet<Car> Cars { get; set; }
         public virtual DbSet<Client> Clients { get; set; }
         public virtual DbSet<ClientBill> ClientBills { get; set; }
+        public virtual DbSet<ClientBillItem> ClientBillItems { get; set; }
         public virtual DbSet<Item> Items { get; set; }
         public virtual DbSet<Supplier> Suppliers { get; set; }
         public virtual DbSet<SupplierBill> SupplierBills { get; set; }
+        public virtual DbSet<SupplierBillItem> SupplierBillItems { get; set; }
         public virtual DbSet<Worker> Workers { get; set; }
         public virtual DbSet<WorkerAdvancePayment> WorkerAdvancePayments { get; set; }
 
