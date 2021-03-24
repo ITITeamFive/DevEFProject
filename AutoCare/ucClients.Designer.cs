@@ -38,6 +38,9 @@ namespace AutoCare
             this.colclientName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colclientPhoneNumber = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
+            this.btnDelte2 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnEdit2 = new DevExpress.XtraEditors.SimpleButton();
             this.lblClientID = new DevExpress.XtraEditors.LabelControl();
             this.lblEdit = new DevExpress.XtraEditors.LabelControl();
             this.btnSaveEdit = new DevExpress.XtraEditors.SimpleButton();
@@ -88,7 +91,7 @@ namespace AutoCare
             this.gridControl1.Location = new System.Drawing.Point(3, 169);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1107, 304);
+            this.gridControl1.Size = new System.Drawing.Size(1107, 309);
             this.gridControl1.TabIndex = 36;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -139,6 +142,9 @@ namespace AutoCare
             // 
             // panelControl3
             // 
+            this.panelControl3.Controls.Add(this.btnCancel);
+            this.panelControl3.Controls.Add(this.btnDelte2);
+            this.panelControl3.Controls.Add(this.btnEdit2);
             this.panelControl3.Controls.Add(this.lblClientID);
             this.panelControl3.Controls.Add(this.lblEdit);
             this.panelControl3.Controls.Add(this.btnSaveEdit);
@@ -152,8 +158,42 @@ namespace AutoCare
             this.panelControl3.Size = new System.Drawing.Size(1111, 177);
             this.panelControl3.TabIndex = 29;
             // 
+            // btnCancel
+            // 
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancel.Location = new System.Drawing.Point(211, 97);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(151, 29);
+            this.btnCancel.TabIndex = 39;
+            this.btnCancel.Text = "الغاء";
+            this.btnCancel.Visible = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // btnDelte2
+            // 
+            this.btnDelte2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDelte2.Location = new System.Drawing.Point(157, 57);
+            this.btnDelte2.Name = "btnDelte2";
+            this.btnDelte2.Size = new System.Drawing.Size(376, 66);
+            this.btnDelte2.TabIndex = 38;
+            this.btnDelte2.Text = "Delete";
+            this.btnDelte2.Visible = false;
+            this.btnDelte2.Click += new System.EventHandler(this.btnDelte2_Click);
+            // 
+            // btnEdit2
+            // 
+            this.btnEdit2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEdit2.Location = new System.Drawing.Point(585, 57);
+            this.btnEdit2.Name = "btnEdit2";
+            this.btnEdit2.Size = new System.Drawing.Size(377, 66);
+            this.btnEdit2.TabIndex = 37;
+            this.btnEdit2.Text = "Edit";
+            this.btnEdit2.Visible = false;
+            this.btnEdit2.Click += new System.EventHandler(this.btnEdit2_Click);
+            // 
             // lblClientID
             // 
+            this.lblClientID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblClientID.Location = new System.Drawing.Point(940, 16);
             this.lblClientID.Name = "lblClientID";
             this.lblClientID.Size = new System.Drawing.Size(0, 16);
@@ -162,6 +202,7 @@ namespace AutoCare
             // 
             // lblEdit
             // 
+            this.lblEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblEdit.Location = new System.Drawing.Point(961, 16);
             this.lblEdit.Name = "lblEdit";
             this.lblEdit.Size = new System.Drawing.Size(111, 17);
@@ -171,6 +212,7 @@ namespace AutoCare
             // 
             // btnSaveEdit
             // 
+            this.btnSaveEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSaveEdit.Location = new System.Drawing.Point(33, 97);
             this.btnSaveEdit.Name = "btnSaveEdit";
             this.btnSaveEdit.Size = new System.Drawing.Size(151, 29);
@@ -181,6 +223,7 @@ namespace AutoCare
             // 
             // txtPhoneNumberEdit
             // 
+            this.txtPhoneNumberEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPhoneNumberEdit.Location = new System.Drawing.Point(81, 57);
             this.txtPhoneNumberEdit.Name = "txtPhoneNumberEdit";
             this.txtPhoneNumberEdit.Size = new System.Drawing.Size(263, 22);
@@ -189,6 +232,7 @@ namespace AutoCare
             // 
             // lblNameEdit
             // 
+            this.lblNameEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNameEdit.Location = new System.Drawing.Point(817, 57);
             this.lblNameEdit.Name = "lblNameEdit";
             this.lblNameEdit.Size = new System.Drawing.Size(69, 17);
@@ -198,6 +242,7 @@ namespace AutoCare
             // 
             // lblPhoneNumberEdit
             // 
+            this.lblPhoneNumberEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPhoneNumberEdit.Location = new System.Drawing.Point(368, 57);
             this.lblPhoneNumberEdit.Name = "lblPhoneNumberEdit";
             this.lblPhoneNumberEdit.Size = new System.Drawing.Size(61, 17);
@@ -207,6 +252,7 @@ namespace AutoCare
             // 
             // txtNameEdit
             // 
+            this.txtNameEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNameEdit.Location = new System.Drawing.Point(539, 57);
             this.txtNameEdit.Name = "txtNameEdit";
             this.txtNameEdit.Size = new System.Drawing.Size(250, 22);
@@ -229,6 +275,7 @@ namespace AutoCare
             // 
             // txtPhoneNumber
             // 
+            this.txtPhoneNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPhoneNumber.Location = new System.Drawing.Point(71, 80);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(263, 22);
@@ -237,6 +284,7 @@ namespace AutoCare
             // 
             // lblName
             // 
+            this.lblName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblName.Location = new System.Drawing.Point(807, 80);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(69, 17);
@@ -246,6 +294,7 @@ namespace AutoCare
             // 
             // btnSave
             // 
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.Location = new System.Drawing.Point(23, 119);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(151, 29);
@@ -256,6 +305,7 @@ namespace AutoCare
             // 
             // lblPhoneNumber
             // 
+            this.lblPhoneNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPhoneNumber.Location = new System.Drawing.Point(358, 80);
             this.lblPhoneNumber.Name = "lblPhoneNumber";
             this.lblPhoneNumber.Size = new System.Drawing.Size(61, 17);
@@ -265,6 +315,7 @@ namespace AutoCare
             // 
             // btnAdd
             // 
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd.Location = new System.Drawing.Point(902, 27);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(151, 29);
@@ -274,6 +325,7 @@ namespace AutoCare
             // 
             // txtName
             // 
+            this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtName.Location = new System.Drawing.Point(529, 80);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(250, 22);
@@ -331,5 +383,8 @@ namespace AutoCare
         private DevExpress.XtraEditors.LabelControl lblNameEdit;
         private DevExpress.XtraEditors.LabelControl lblPhoneNumberEdit;
         private DevExpress.XtraEditors.TextEdit txtNameEdit;
+        private DevExpress.XtraEditors.SimpleButton btnEdit2;
+        private DevExpress.XtraEditors.SimpleButton btnDelte2;
+        private DevExpress.XtraEditors.SimpleButton btnCancel;
     }
 }
