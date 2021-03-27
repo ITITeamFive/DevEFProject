@@ -129,5 +129,20 @@ namespace AutoCare
             lblEdit.Visible = false;
             btnSaveEdit.Visible = false;
         }
+
+        private void panelControl2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelControl3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -81,9 +81,10 @@ namespace AutoCare
             this.panelControl1.Controls.Add(this.panelControl2);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
+            this.panelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.panelControl1.Size = new System.Drawing.Size(1156, 635);
+            this.panelControl1.Size = new System.Drawing.Size(991, 516);
             this.panelControl1.TabIndex = 0;
             this.panelControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl1_Paint);
             // 
@@ -99,50 +100,57 @@ namespace AutoCare
             this.panelControl3.Controls.Add(this.lblPhoneNumberEdit);
             this.panelControl3.Controls.Add(this.txtNameEdit);
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl3.Location = new System.Drawing.Point(2, 454);
+            this.panelControl3.Location = new System.Drawing.Point(2, 369);
+            this.panelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(1152, 179);
+            this.panelControl3.Size = new System.Drawing.Size(987, 145);
             this.panelControl3.TabIndex = 3;
+            this.panelControl3.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl3_Paint);
             // 
             // lblAddressEdit
             // 
-            this.lblAddressEdit.Location = new System.Drawing.Point(691, 68);
+            this.lblAddressEdit.Location = new System.Drawing.Point(592, 55);
+            this.lblAddressEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblAddressEdit.Name = "lblAddressEdit";
-            this.lblAddressEdit.Size = new System.Drawing.Size(69, 17);
+            this.lblAddressEdit.Size = new System.Drawing.Size(56, 13);
             this.lblAddressEdit.TabIndex = 46;
             this.lblAddressEdit.Text = "عنوان المورد";
             this.lblAddressEdit.Visible = false;
             // 
             // txtAddressEdit
             // 
-            this.txtAddressEdit.Location = new System.Drawing.Point(411, 63);
+            this.txtAddressEdit.Location = new System.Drawing.Point(352, 51);
+            this.txtAddressEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAddressEdit.Name = "txtAddressEdit";
-            this.txtAddressEdit.Size = new System.Drawing.Size(250, 22);
+            this.txtAddressEdit.Size = new System.Drawing.Size(214, 20);
             this.txtAddressEdit.TabIndex = 45;
             this.txtAddressEdit.Visible = false;
             // 
             // lblSupplierID
             // 
-            this.lblSupplierID.Location = new System.Drawing.Point(974, 24);
+            this.lblSupplierID.Location = new System.Drawing.Point(835, 20);
+            this.lblSupplierID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblSupplierID.Name = "lblSupplierID";
-            this.lblSupplierID.Size = new System.Drawing.Size(0, 16);
+            this.lblSupplierID.Size = new System.Drawing.Size(0, 13);
             this.lblSupplierID.TabIndex = 44;
             this.lblSupplierID.Visible = false;
             // 
             // lblEdit
             // 
-            this.lblEdit.Location = new System.Drawing.Point(994, 24);
+            this.lblEdit.Location = new System.Drawing.Point(852, 20);
+            this.lblEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblEdit.Name = "lblEdit";
-            this.lblEdit.Size = new System.Drawing.Size(107, 17);
+            this.lblEdit.Size = new System.Drawing.Size(84, 13);
             this.lblEdit.TabIndex = 43;
             this.lblEdit.Text = "تعديل بيانات المورد";
             this.lblEdit.Visible = false;
             // 
             // btnSaveEdit
             // 
-            this.btnSaveEdit.Location = new System.Drawing.Point(67, 125);
+            this.btnSaveEdit.Location = new System.Drawing.Point(57, 102);
+            this.btnSaveEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaveEdit.Name = "btnSaveEdit";
-            this.btnSaveEdit.Size = new System.Drawing.Size(151, 29);
+            this.btnSaveEdit.Size = new System.Drawing.Size(129, 24);
             this.btnSaveEdit.TabIndex = 42;
             this.btnSaveEdit.Text = "حفظ التعديل";
             this.btnSaveEdit.Visible = false;
@@ -150,35 +158,39 @@ namespace AutoCare
             // 
             // txtPhoneNumberEdit
             // 
-            this.txtPhoneNumberEdit.Location = new System.Drawing.Point(22, 65);
+            this.txtPhoneNumberEdit.Location = new System.Drawing.Point(19, 53);
+            this.txtPhoneNumberEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhoneNumberEdit.Name = "txtPhoneNumberEdit";
-            this.txtPhoneNumberEdit.Size = new System.Drawing.Size(263, 22);
+            this.txtPhoneNumberEdit.Size = new System.Drawing.Size(225, 20);
             this.txtPhoneNumberEdit.TabIndex = 39;
             this.txtPhoneNumberEdit.Visible = false;
             // 
             // lblNameEdit
             // 
-            this.lblNameEdit.Location = new System.Drawing.Point(1059, 68);
+            this.lblNameEdit.Location = new System.Drawing.Point(908, 55);
+            this.lblNameEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblNameEdit.Name = "lblNameEdit";
-            this.lblNameEdit.Size = new System.Drawing.Size(65, 17);
+            this.lblNameEdit.Size = new System.Drawing.Size(52, 13);
             this.lblNameEdit.TabIndex = 40;
             this.lblNameEdit.Text = "اسم المورد";
             this.lblNameEdit.Visible = false;
             // 
             // lblPhoneNumberEdit
             // 
-            this.lblPhoneNumberEdit.Location = new System.Drawing.Point(309, 65);
+            this.lblPhoneNumberEdit.Location = new System.Drawing.Point(265, 53);
+            this.lblPhoneNumberEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblPhoneNumberEdit.Name = "lblPhoneNumberEdit";
-            this.lblPhoneNumberEdit.Size = new System.Drawing.Size(61, 17);
+            this.lblPhoneNumberEdit.Size = new System.Drawing.Size(48, 13);
             this.lblPhoneNumberEdit.TabIndex = 41;
             this.lblPhoneNumberEdit.Text = "رقم الهاتف";
             this.lblPhoneNumberEdit.Visible = false;
             // 
             // txtNameEdit
             // 
-            this.txtNameEdit.Location = new System.Drawing.Point(779, 63);
+            this.txtNameEdit.Location = new System.Drawing.Point(668, 51);
+            this.txtNameEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNameEdit.Name = "txtNameEdit";
-            this.txtNameEdit.Size = new System.Drawing.Size(250, 22);
+            this.txtNameEdit.Size = new System.Drawing.Size(214, 20);
             this.txtNameEdit.TabIndex = 38;
             this.txtNameEdit.Visible = false;
             // 
@@ -188,13 +200,16 @@ namespace AutoCare
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridControl1.DataSource = this.supplierBindingSource;
-            this.gridControl1.Location = new System.Drawing.Point(2, 156);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl1.Location = new System.Drawing.Point(2, 127);
             this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1154, 292);
+            this.gridControl1.Size = new System.Drawing.Size(989, 237);
             this.gridControl1.TabIndex = 2;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             this.gridControl1.DoubleClick += new System.EventHandler(this.gridControl1_DoubleClick);
             // 
             // supplierBindingSource
@@ -208,6 +223,7 @@ namespace AutoCare
             this.colsupplierName,
             this.colsupplierAddress,
             this.colsupplierPhoneNumber});
+            this.gridView1.DetailHeight = 284;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
@@ -215,41 +231,41 @@ namespace AutoCare
             // 
             this.colsupplierID.Caption = "كود المورد";
             this.colsupplierID.FieldName = "supplierID";
-            this.colsupplierID.MinWidth = 25;
+            this.colsupplierID.MinWidth = 21;
             this.colsupplierID.Name = "colsupplierID";
             this.colsupplierID.Visible = true;
             this.colsupplierID.VisibleIndex = 0;
-            this.colsupplierID.Width = 94;
+            this.colsupplierID.Width = 81;
             // 
             // colsupplierName
             // 
             this.colsupplierName.Caption = "اسم المورد";
             this.colsupplierName.FieldName = "supplierName";
-            this.colsupplierName.MinWidth = 25;
+            this.colsupplierName.MinWidth = 21;
             this.colsupplierName.Name = "colsupplierName";
             this.colsupplierName.Visible = true;
             this.colsupplierName.VisibleIndex = 1;
-            this.colsupplierName.Width = 94;
+            this.colsupplierName.Width = 81;
             // 
             // colsupplierAddress
             // 
             this.colsupplierAddress.Caption = "عنوان المورد";
             this.colsupplierAddress.FieldName = "supplierAddress";
-            this.colsupplierAddress.MinWidth = 25;
+            this.colsupplierAddress.MinWidth = 21;
             this.colsupplierAddress.Name = "colsupplierAddress";
             this.colsupplierAddress.Visible = true;
             this.colsupplierAddress.VisibleIndex = 2;
-            this.colsupplierAddress.Width = 94;
+            this.colsupplierAddress.Width = 81;
             // 
             // colsupplierPhoneNumber
             // 
             this.colsupplierPhoneNumber.Caption = "رقم الهاتف";
             this.colsupplierPhoneNumber.FieldName = "supplierPhoneNumber";
-            this.colsupplierPhoneNumber.MinWidth = 25;
+            this.colsupplierPhoneNumber.MinWidth = 21;
             this.colsupplierPhoneNumber.Name = "colsupplierPhoneNumber";
             this.colsupplierPhoneNumber.Visible = true;
             this.colsupplierPhoneNumber.VisibleIndex = 3;
-            this.colsupplierPhoneNumber.Width = 94;
+            this.colsupplierPhoneNumber.Width = 81;
             // 
             // panelControl2
             // 
@@ -263,49 +279,56 @@ namespace AutoCare
             this.panelControl2.Controls.Add(this.txtName);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl2.Location = new System.Drawing.Point(2, 2);
+            this.panelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(1152, 148);
+            this.panelControl2.Size = new System.Drawing.Size(987, 120);
             this.panelControl2.TabIndex = 1;
+            this.panelControl2.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl2_Paint);
             // 
             // txtPhoneNumber
             // 
-            this.txtPhoneNumber.Location = new System.Drawing.Point(112, 65);
+            this.txtPhoneNumber.Location = new System.Drawing.Point(96, 53);
+            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
-            this.txtPhoneNumber.Size = new System.Drawing.Size(203, 22);
+            this.txtPhoneNumber.Size = new System.Drawing.Size(174, 20);
             this.txtPhoneNumber.TabIndex = 42;
             this.txtPhoneNumber.Visible = false;
             // 
             // lblPhoneNumber
             // 
-            this.lblPhoneNumber.Location = new System.Drawing.Point(333, 68);
+            this.lblPhoneNumber.Location = new System.Drawing.Point(285, 55);
+            this.lblPhoneNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblPhoneNumber.Name = "lblPhoneNumber";
-            this.lblPhoneNumber.Size = new System.Drawing.Size(61, 17);
+            this.lblPhoneNumber.Size = new System.Drawing.Size(48, 13);
             this.lblPhoneNumber.TabIndex = 43;
             this.lblPhoneNumber.Text = "رقم الهاتف";
             this.lblPhoneNumber.Visible = false;
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(446, 65);
+            this.txtAddress.Location = new System.Drawing.Point(382, 53);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(181, 22);
+            this.txtAddress.Size = new System.Drawing.Size(155, 20);
             this.txtAddress.TabIndex = 37;
             this.txtAddress.Visible = false;
             // 
             // lblName
             // 
-            this.lblName.Location = new System.Drawing.Point(949, 68);
+            this.lblName.Location = new System.Drawing.Point(813, 55);
+            this.lblName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(36, 17);
+            this.lblName.Size = new System.Drawing.Size(29, 13);
             this.lblName.TabIndex = 38;
             this.lblName.Text = "الاسم";
             this.lblName.Visible = false;
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(112, 103);
+            this.btnSave.Location = new System.Drawing.Point(96, 84);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(151, 29);
+            this.btnSave.Size = new System.Drawing.Size(129, 24);
             this.btnSave.TabIndex = 41;
             this.btnSave.Text = "حفظ";
             this.btnSave.Visible = false;
@@ -313,37 +336,41 @@ namespace AutoCare
             // 
             // lblAddress
             // 
-            this.lblAddress.Location = new System.Drawing.Point(650, 68);
+            this.lblAddress.Location = new System.Drawing.Point(557, 55);
+            this.lblAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(37, 17);
+            this.lblAddress.Size = new System.Drawing.Size(31, 13);
             this.lblAddress.TabIndex = 39;
             this.lblAddress.Text = "العنوان";
             this.lblAddress.Visible = false;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(921, 15);
+            this.btnAdd.Location = new System.Drawing.Point(835, 4);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(151, 29);
+            this.btnAdd.Size = new System.Drawing.Size(129, 24);
             this.btnAdd.TabIndex = 40;
             this.btnAdd.Text = "اضافة مورد جديد";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(744, 65);
+            this.txtName.Location = new System.Drawing.Point(638, 53);
+            this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(178, 22);
+            this.txtName.Size = new System.Drawing.Size(153, 20);
             this.txtName.TabIndex = 36;
             this.txtName.Visible = false;
             // 
             // ucSuppliers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ucSuppliers";
-            this.Size = new System.Drawing.Size(1156, 635);
+            this.Size = new System.Drawing.Size(991, 516);
             this.Load += new System.EventHandler(this.ucSuppliers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);

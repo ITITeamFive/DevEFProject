@@ -32,18 +32,19 @@ namespace AutoCare
             this.components = new System.ComponentModel.Container();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.labEditItem = new System.Windows.Forms.Label();
+            this.labId = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.labCost = new System.Windows.Forms.Label();
+            this.labPrice = new System.Windows.Forms.Label();
+            this.labQuantity = new System.Windows.Forms.Label();
+            this.labModel = new System.Windows.Forms.Label();
+            this.labName = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtModel = new System.Windows.Forms.TextBox();
+            this.txtQuantity = new System.Windows.Forms.TextBox();
+            this.txtCost = new System.Windows.Forms.TextBox();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -78,135 +79,161 @@ namespace AutoCare
             // 
             // panelControl2
             // 
-            this.panelControl2.Controls.Add(this.button1);
-            this.panelControl2.Controls.Add(this.textBox5);
-            this.panelControl2.Controls.Add(this.label5);
-            this.panelControl2.Controls.Add(this.label4);
-            this.panelControl2.Controls.Add(this.label3);
-            this.panelControl2.Controls.Add(this.label2);
-            this.panelControl2.Controls.Add(this.label1);
-            this.panelControl2.Controls.Add(this.textBox4);
-            this.panelControl2.Controls.Add(this.textBox3);
-            this.panelControl2.Controls.Add(this.textBox2);
-            this.panelControl2.Controls.Add(this.textBox1);
-            this.panelControl2.Controls.Add(this.button2);
+            this.panelControl2.Controls.Add(this.labEditItem);
+            this.panelControl2.Controls.Add(this.labId);
+            this.panelControl2.Controls.Add(this.btnSave);
+            this.panelControl2.Controls.Add(this.txtPrice);
+            this.panelControl2.Controls.Add(this.labCost);
+            this.panelControl2.Controls.Add(this.labPrice);
+            this.panelControl2.Controls.Add(this.labQuantity);
+            this.panelControl2.Controls.Add(this.labModel);
+            this.panelControl2.Controls.Add(this.labName);
+            this.panelControl2.Controls.Add(this.txtName);
+            this.panelControl2.Controls.Add(this.txtModel);
+            this.panelControl2.Controls.Add(this.txtQuantity);
+            this.panelControl2.Controls.Add(this.txtCost);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelControl2.Location = new System.Drawing.Point(2, 285);
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(1033, 148);
             this.panelControl2.TabIndex = 3;
             // 
-            // button1
+            // labEditItem
             // 
-            this.button1.Location = new System.Drawing.Point(7, 36);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 23);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Add item";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.labEditItem.AutoSize = true;
+            this.labEditItem.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labEditItem.Location = new System.Drawing.Point(829, 2);
+            this.labEditItem.Name = "labEditItem";
+            this.labEditItem.Size = new System.Drawing.Size(78, 14);
+            this.labEditItem.TabIndex = 39;
+            this.labEditItem.Text = "تعديل المنتج";
+            this.labEditItem.Visible = false;
             // 
-            // textBox5
+            // labId
             // 
-            this.textBox5.Location = new System.Drawing.Point(298, 87);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(195, 20);
-            this.textBox5.TabIndex = 27;
-            this.textBox5.Visible = false;
+            this.labId.AutoSize = true;
+            this.labId.Location = new System.Drawing.Point(204, 113);
+            this.labId.Name = "labId";
+            this.labId.Size = new System.Drawing.Size(0, 13);
+            this.labId.TabIndex = 31;
+            this.labId.Visible = false;
             // 
-            // label5
+            // btnSave
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(543, 14);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 13);
-            this.label5.TabIndex = 26;
-            this.label5.Text = "item cost";
-            this.label5.Visible = false;
+            this.btnSave.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(5, 53);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(60, 22);
+            this.btnSave.TabIndex = 29;
+            this.btnSave.Text = "تعديل";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Visible = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // label4
+            // txtPrice
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(204, 87);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 13);
-            this.label4.TabIndex = 25;
-            this.label4.Text = "item price";
-            this.label4.Visible = false;
+            this.txtPrice.Font = new System.Drawing.Font("Tahoma", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrice.Location = new System.Drawing.Point(458, 92);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(195, 18);
+            this.txtPrice.TabIndex = 27;
+            this.txtPrice.Visible = false;
             // 
-            // label3
+            // labCost
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(200, 45);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 13);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "item quantity";
-            this.label3.Visible = false;
+            this.labCost.AutoSize = true;
+            this.labCost.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labCost.Location = new System.Drawing.Point(337, 24);
+            this.labCost.Name = "labCost";
+            this.labCost.Size = new System.Drawing.Size(74, 13);
+            this.labCost.TabIndex = 26;
+            this.labCost.Text = "تكلفت المنتج";
+            this.labCost.Visible = false;
             // 
-            // label2
+            // labPrice
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(543, 73);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "item model";
-            this.label2.Visible = false;
+            this.labPrice.AutoSize = true;
+            this.labPrice.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labPrice.Location = new System.Drawing.Point(720, 93);
+            this.labPrice.Name = "labPrice";
+            this.labPrice.Size = new System.Drawing.Size(66, 13);
+            this.labPrice.TabIndex = 25;
+            this.labPrice.Text = "سعر المنتج";
+            this.labPrice.Visible = false;
             // 
-            // label1
+            // labQuantity
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(200, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 13);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "item Name";
-            this.label1.Visible = false;
+            this.labQuantity.AutoSize = true;
+            this.labQuantity.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labQuantity.Location = new System.Drawing.Point(720, 53);
+            this.labQuantity.Name = "labQuantity";
+            this.labQuantity.Size = new System.Drawing.Size(66, 13);
+            this.labQuantity.TabIndex = 24;
+            this.labQuantity.Text = "كمية المنتج";
+            this.labQuantity.Visible = false;
             // 
-            // textBox4
+            // labModel
             // 
-            this.textBox4.Location = new System.Drawing.Point(298, 7);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(195, 20);
-            this.textBox4.TabIndex = 21;
-            this.textBox4.Visible = false;
-            this.textBox4.TextChanged += new System.EventHandler(this.itemName_TextChanged);
+            this.labModel.AutoSize = true;
+            this.labModel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labModel.Location = new System.Drawing.Point(337, 93);
+            this.labModel.Name = "labModel";
+            this.labModel.Size = new System.Drawing.Size(71, 13);
+            this.labModel.TabIndex = 23;
+            this.labModel.Text = "اصدار المنتج";
+            this.labModel.Visible = false;
             // 
-            // textBox3
+            // labName
             // 
-            this.textBox3.Location = new System.Drawing.Point(649, 66);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(195, 20);
-            this.textBox3.TabIndex = 20;
-            this.textBox3.Visible = false;
+            this.labName.AutoSize = true;
+            this.labName.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labName.Location = new System.Drawing.Point(720, 19);
+            this.labName.Name = "labName";
+            this.labName.Size = new System.Drawing.Size(66, 13);
+            this.labName.TabIndex = 22;
+            this.labName.Text = "اسم المنتج";
+            this.labName.Visible = false;
             // 
-            // textBox2
+            // txtName
             // 
-            this.textBox2.Location = new System.Drawing.Point(298, 45);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(195, 20);
-            this.textBox2.TabIndex = 19;
-            this.textBox2.Visible = false;
+            this.txtName.BackColor = System.Drawing.Color.White;
+            this.txtName.Font = new System.Drawing.Font("Tahoma", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(458, 19);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(195, 18);
+            this.txtName.TabIndex = 21;
+            this.txtName.Visible = false;
+            this.txtName.TextChanged += new System.EventHandler(this.itemName_TextChanged);
             // 
-            // textBox1
+            // txtModel
             // 
-            this.textBox1.Location = new System.Drawing.Point(649, 14);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 20);
-            this.textBox1.TabIndex = 18;
-            this.textBox1.Visible = false;
+            this.txtModel.BackColor = System.Drawing.Color.White;
+            this.txtModel.Font = new System.Drawing.Font("Tahoma", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtModel.Location = new System.Drawing.Point(99, 87);
+            this.txtModel.Name = "txtModel";
+            this.txtModel.Size = new System.Drawing.Size(195, 18);
+            this.txtModel.TabIndex = 20;
+            this.txtModel.Visible = false;
             // 
-            // button2
+            // txtQuantity
             // 
-            this.button2.Location = new System.Drawing.Point(868, 34);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(53, 31);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "update";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Visible = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.txtQuantity.BackColor = System.Drawing.Color.White;
+            this.txtQuantity.Font = new System.Drawing.Font("Tahoma", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuantity.Location = new System.Drawing.Point(458, 52);
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(195, 18);
+            this.txtQuantity.TabIndex = 19;
+            this.txtQuantity.Visible = false;
+            // 
+            // txtCost
+            // 
+            this.txtCost.BackColor = System.Drawing.Color.White;
+            this.txtCost.Font = new System.Drawing.Font("Tahoma", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCost.Location = new System.Drawing.Point(99, 23);
+            this.txtCost.Name = "txtCost";
+            this.txtCost.Size = new System.Drawing.Size(195, 18);
+            this.txtCost.TabIndex = 38;
+            this.txtCost.Visible = false;
             // 
             // gridControl1
             // 
@@ -223,6 +250,8 @@ namespace AutoCare
             this.gridControl1.TabIndex = 2;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
+            this.gridControl1.DoubleClick += new System.EventHandler(this.gridControl1_DoubleClick);
             // 
             // itemBindingSource
             // 
@@ -242,6 +271,7 @@ namespace AutoCare
             // 
             // colitemID
             // 
+            this.colitemID.Caption = "رقم القطعة";
             this.colitemID.FieldName = "itemID";
             this.colitemID.Name = "colitemID";
             this.colitemID.Visible = true;
@@ -249,6 +279,7 @@ namespace AutoCare
             // 
             // colitemName
             // 
+            this.colitemName.Caption = "اسم القطعة";
             this.colitemName.FieldName = "itemName";
             this.colitemName.Name = "colitemName";
             this.colitemName.Visible = true;
@@ -256,6 +287,7 @@ namespace AutoCare
             // 
             // colitemQuantity
             // 
+            this.colitemQuantity.Caption = "كميه القطع";
             this.colitemQuantity.FieldName = "itemQuantity";
             this.colitemQuantity.Name = "colitemQuantity";
             this.colitemQuantity.Visible = true;
@@ -263,6 +295,7 @@ namespace AutoCare
             // 
             // colitemPrice
             // 
+            this.colitemPrice.Caption = "سعر القطعة";
             this.colitemPrice.FieldName = "itemPrice";
             this.colitemPrice.Name = "colitemPrice";
             this.colitemPrice.Visible = true;
@@ -270,6 +303,7 @@ namespace AutoCare
             // 
             // colitemCost
             // 
+            this.colitemCost.Caption = "تكلفت القطعة ";
             this.colitemCost.FieldName = "itemCost";
             this.colitemCost.Name = "colitemCost";
             this.colitemCost.Visible = true;
@@ -277,6 +311,7 @@ namespace AutoCare
             // 
             // colitemModel
             // 
+            this.colitemModel.Caption = "اصدار القطعة";
             this.colitemModel.FieldName = "itemModel";
             this.colitemModel.Name = "colitemModel";
             this.colitemModel.Visible = true;
@@ -326,18 +361,16 @@ namespace AutoCare
 
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.PanelControl panelControl2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtPrice;
+        private System.Windows.Forms.Label labCost;
+        private System.Windows.Forms.Label labPrice;
+        private System.Windows.Forms.Label labQuantity;
+        private System.Windows.Forms.Label labModel;
+        private System.Windows.Forms.Label labName;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtModel;
+        private System.Windows.Forms.TextBox txtQuantity;
+        private System.Windows.Forms.TextBox txtCost;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn colitemID;
@@ -349,5 +382,8 @@ namespace AutoCare
         private DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit repositoryItemGridLookUpEdit1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
         private System.Windows.Forms.BindingSource itemBindingSource;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label labId;
+        private System.Windows.Forms.Label labEditItem;
     }
 }
