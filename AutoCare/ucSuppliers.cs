@@ -163,17 +163,19 @@ namespace AutoCare
 
         private void btnDelte2_Click(object sender, EventArgs e)
         {
-            btnEdit2.Visible = false;
-            btnDelte2.Visible = false;
-
             Supplier row = gridView1.GetRow(gridView1.FocusedRowHandle) as Supplier;
 
-            if (row != null)
+            btnEdit2.Visible = false;
+            btnDelte2.Visible = false;
+            if (XtraMessageBox.Show($"هل انت متأكد من حذف المورد رقم {row.supplierID} ؟ ", "تأكيد", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                ctx.Suppliers.Remove(row);
-                ctx.SaveChanges();
-                supplierBindingSource.DataSource = null;
-                supplierBindingSource.DataSource = ctx.Suppliers.ToList();
+                if (row != null)
+                {
+                    ctx.Suppliers.Remove(row);
+                    ctx.SaveChanges();
+                    supplierBindingSource.DataSource = null;
+                    supplierBindingSource.DataSource = ctx.Suppliers.ToList();
+                }
             }
         }
 

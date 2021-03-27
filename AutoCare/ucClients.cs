@@ -74,22 +74,6 @@ namespace AutoCare
         {
             btnEdit2.Visible = true;
             btnDelte2.Visible = true;
-            
-            //GridView gridView = gridControl1.FocusedView as GridView;
-            //object row = gridView.GetRow(gridView.FocusedRowHandle);
-            //Client client = (Client)row;
-            //lblEdit.Visible = true;
-            //lblNameEdit.Visible = true;
-            //lblPhoneNumberEdit.Visible = true;
-            //txtNameEdit.Visible = true;
-            //txtPhoneNumberEdit.Visible = true;
-            //btnSaveEdit.Visible = true;
-            //if (row != null)
-            //{
-            //    lblClientID.Text = client.clientID.ToString();
-            //    txtNameEdit.Text = client.clientName.ToString();
-            //    txtPhoneNumberEdit.Text = client.clientPhoneNumber.ToString();
-            //}
         }
 
         private void btnSaveEdit_Click_1(object sender, EventArgs e)
@@ -111,6 +95,7 @@ namespace AutoCare
             lblPhoneNumberEdit.Visible = false;
             lblEdit.Visible = false;
             btnSaveEdit.Visible = false;
+            btnCancel.Visible = false;
         }
 
         private void btnEdit2_Click(object sender, EventArgs e)
@@ -138,17 +123,19 @@ namespace AutoCare
 
         private void btnDelte2_Click(object sender, EventArgs e)
         {
+            Client row = gridView1.GetRow(gridView1.FocusedRowHandle) as Client;
             btnEdit2.Visible = false;
             btnDelte2.Visible = false;
-
-            Client row = gridView1.GetRow(gridView1.FocusedRowHandle) as Client;
-
-            if (row != null)
+            if (XtraMessageBox.Show($"هل انت متأكد من حذف العميل رقم {row.clientID} ؟ ", "تأكيد ",
+                MessageBoxButtons.YesNo)==DialogResult.Yes)
             {
-                ctx.Clients.Remove(row);
-                ctx.SaveChanges();
-                clientBindingSource.DataSource = null;
-                clientBindingSource.DataSource = ctx.Clients.ToList();
+                if (row != null)
+                {
+                    ctx.Clients.Remove(row);
+                    ctx.SaveChanges();
+                    clientBindingSource.DataSource = null;
+                    clientBindingSource.DataSource = ctx.Clients.ToList();
+                }
             }
         }
 
@@ -163,7 +150,7 @@ namespace AutoCare
             btnSaveEdit.Visible = false;
             btnEdit2.Visible = false;
             btnDelte2.Visible = false;
-                
+            btnCancel.Visible = false;
         }
     }
 }
