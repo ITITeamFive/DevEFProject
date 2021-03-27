@@ -34,6 +34,7 @@ namespace AutoCare
             this.Container = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.acMaintenanceBill = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acSuppliesBill = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator1 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
             this.acDisplayBills = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -44,7 +45,6 @@ namespace AutoCare
             this.acFinance = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
-            this.acMaintenanceBill = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
@@ -53,11 +53,11 @@ namespace AutoCare
             // Container
             // 
             this.Container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Container.Location = new System.Drawing.Point(0, 39);
+            this.Container.Location = new System.Drawing.Point(0, 33);
             this.Container.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Container.Name = "Container";
             this.Container.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Container.Size = new System.Drawing.Size(1123, 743);
+            this.Container.Size = new System.Drawing.Size(1113, 744);
             this.Container.TabIndex = 0;
             // 
             // accordionControl1
@@ -76,12 +76,12 @@ namespace AutoCare
             this.acSuppliers,
             this.acWorkers,
             this.acFinance});
-            this.accordionControl1.Location = new System.Drawing.Point(1123, 39);
+            this.accordionControl1.Location = new System.Drawing.Point(1113, 33);
             this.accordionControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(375, 743);
+            this.accordionControl1.Size = new System.Drawing.Size(375, 744);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -101,9 +101,17 @@ namespace AutoCare
             this.accordionControlElement1.Name = "accordionControlElement1";
             this.accordionControlElement1.Text = "الفواتير";
             // 
+            // acMaintenanceBill
+            // 
+            this.acMaintenanceBill.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acMaintenanceBill.ImageOptions.Image")));
+            this.acMaintenanceBill.Name = "acMaintenanceBill";
+            this.acMaintenanceBill.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.acMaintenanceBill.Text = "فاتورة صيانة";
+            this.acMaintenanceBill.Click += new System.EventHandler(this.acMaintenanceBill_Click);
+            // 
             // acSuppliesBill
             // 
-            this.acSuppliesBill.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement3.ImageOptions.Image")));
+            this.acSuppliesBill.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acSuppliesBill.ImageOptions.Image")));
             this.acSuppliesBill.Name = "acSuppliesBill";
             this.acSuppliesBill.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acSuppliesBill.Text = "فاتورة طلبيات";
@@ -115,7 +123,7 @@ namespace AutoCare
             // 
             // acDisplayBills
             // 
-            this.acDisplayBills.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement4.ImageOptions.Image")));
+            this.acDisplayBills.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acDisplayBills.ImageOptions.Image")));
             this.acDisplayBills.Name = "acDisplayBills";
             this.acDisplayBills.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acDisplayBills.Text = "عرض الفواتير";
@@ -123,7 +131,7 @@ namespace AutoCare
             // 
             // acRepository
             // 
-            this.acRepository.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement5.ImageOptions.Image")));
+            this.acRepository.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acRepository.ImageOptions.Image")));
             this.acRepository.Name = "acRepository";
             this.acRepository.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acRepository.Text = "المخزن";
@@ -131,7 +139,7 @@ namespace AutoCare
             // 
             // acClients
             // 
-            this.acClients.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement6.ImageOptions.Image")));
+            this.acClients.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acClients.ImageOptions.Image")));
             this.acClients.Name = "acClients";
             this.acClients.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acClients.Text = "العملاء";
@@ -139,7 +147,7 @@ namespace AutoCare
             // 
             // acSuppliers
             // 
-            this.acSuppliers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement7.ImageOptions.Image")));
+            this.acSuppliers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acSuppliers.ImageOptions.Image")));
             this.acSuppliers.Name = "acSuppliers";
             this.acSuppliers.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acSuppliers.Text = "الموردين";
@@ -147,7 +155,7 @@ namespace AutoCare
             // 
             // acWorkers
             // 
-            this.acWorkers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement8.ImageOptions.Image")));
+            this.acWorkers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acWorkers.ImageOptions.Image")));
             this.acWorkers.Name = "acWorkers";
             this.acWorkers.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acWorkers.Text = "العمالة";
@@ -155,7 +163,7 @@ namespace AutoCare
             // 
             // acFinance
             // 
-            this.acFinance.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement9.ImageOptions.Image")));
+            this.acFinance.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acFinance.ImageOptions.Image")));
             this.acFinance.Name = "acFinance";
             this.acFinance.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acFinance.Text = "الحسابات";
@@ -167,7 +175,7 @@ namespace AutoCare
             this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
             this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1498, 39);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1488, 33);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             // 
@@ -176,20 +184,12 @@ namespace AutoCare
             this.fluentFormDefaultManager1.DockingEnabled = false;
             this.fluentFormDefaultManager1.Form = this;
             // 
-            // acMaintenanceBill
-            // 
-            this.acMaintenanceBill.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement2.ImageOptions.Image")));
-            this.acMaintenanceBill.Name = "acMaintenanceBill";
-            this.acMaintenanceBill.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.acMaintenanceBill.Text = "فاتورة صيانة";
-            this.acMaintenanceBill.Click += new System.EventHandler(this.acMaintenanceBill_Click);
-            // 
             // Form1
             // 
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1498, 782);
+            this.ClientSize = new System.Drawing.Size(1488, 777);
             this.ControlContainer = this.Container;
             this.Controls.Add(this.Container);
             this.Controls.Add(this.accordionControl1);
