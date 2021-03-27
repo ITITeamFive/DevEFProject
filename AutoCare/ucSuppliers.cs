@@ -80,26 +80,29 @@ namespace AutoCare
 
         private void gridControl1_DoubleClick(object sender, EventArgs e)
         {
-            GridView gridView = gridControl1.FocusedView as GridView;
-            object row = gridView.GetRow(gridView.FocusedRowHandle);
+            btnEdit2.Visible = true;
+            btnDelte2.Visible = true;
 
-            Supplier supplier = (Supplier)row;
+            //GridView gridView = gridControl1.FocusedView as GridView;
+            //object row = gridView.GetRow(gridView.FocusedRowHandle);
 
-            lblEdit.Visible = true;
-            lblNameEdit.Visible = true;
-            lblPhoneNumberEdit.Visible = true;
-            lblAddressEdit.Visible = true;
-            txtNameEdit.Visible = true;
-            txtPhoneNumberEdit.Visible = true;
-            txtAddressEdit.Visible = true;
-            btnSaveEdit.Visible = true;
-            if (row != null)
-            {
-                lblSupplierID.Text = supplier.supplierID.ToString();
-                txtNameEdit.Text = supplier.supplierName.ToString();
-                txtPhoneNumberEdit.Text = supplier.supplierPhoneNumber.ToString();
-                txtAddressEdit.Text = supplier.supplierAddress.ToString();
-            }
+            //Supplier supplier = (Supplier)row;
+
+            //lblEdit.Visible = true;
+            //lblNameEdit.Visible = true;
+            //lblPhoneNumberEdit.Visible = true;
+            //lblAddressEdit.Visible = true;
+            //txtNameEdit.Visible = true;
+            //txtPhoneNumberEdit.Visible = true;
+            //txtAddressEdit.Visible = true;
+            //btnSaveEdit.Visible = true;
+            //if (row != null)
+            //{
+            //    lblSupplierID.Text = supplier.supplierID.ToString();
+            //    txtNameEdit.Text = supplier.supplierName.ToString();
+            //    txtPhoneNumberEdit.Text = supplier.supplierPhoneNumber.ToString();
+            //    txtAddressEdit.Text = supplier.supplierAddress.ToString();
+            //}
         }
 
 
@@ -128,6 +131,68 @@ namespace AutoCare
             lblAddressEdit.Visible = false;
             lblEdit.Visible = false;
             btnSaveEdit.Visible = false;
+            btnCancel.Visible = false;
+        }
+
+        private void btnEdit2_Click(object sender, EventArgs e)
+        {
+            GridView gridView = gridControl1.FocusedView as GridView;
+            object row = gridView.GetRow(gridView.FocusedRowHandle);
+
+            Supplier supplier = (Supplier)row;
+
+            lblEdit.Visible = true;
+            lblNameEdit.Visible = true;
+            lblPhoneNumberEdit.Visible = true;
+            lblAddressEdit.Visible = true;
+            txtNameEdit.Visible = true;
+            txtPhoneNumberEdit.Visible = true;
+            txtAddressEdit.Visible = true;
+            btnSaveEdit.Visible = true;
+            btnDelte2.Visible = false;
+            btnEdit2.Visible = false;
+            btnCancel.Visible = true;
+            if (row != null)
+            {
+                lblSupplierID.Text = supplier.supplierID.ToString();
+                txtNameEdit.Text = supplier.supplierName.ToString();
+                txtPhoneNumberEdit.Text = supplier.supplierPhoneNumber.ToString();
+                txtAddressEdit.Text = supplier.supplierAddress.ToString();
+            }
+        }
+
+        private void btnDelte2_Click(object sender, EventArgs e)
+        {
+            Supplier row = gridView1.GetRow(gridView1.FocusedRowHandle) as Supplier;
+
+            btnEdit2.Visible = false;
+            btnDelte2.Visible = false;
+            if (XtraMessageBox.Show($"هل انت متأكد من حذف المورد رقم {row.supplierID} ؟ ", "تأكيد", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                if (row != null)
+                {
+                    ctx.Suppliers.Remove(row);
+                    ctx.SaveChanges();
+                    supplierBindingSource.DataSource = null;
+                    supplierBindingSource.DataSource = ctx.Suppliers.ToList();
+                }
+            }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            lblSupplierID.Visible = false;
+            lblEdit.Visible = false;
+            lblNameEdit.Visible = false;
+            txtNameEdit.Visible = false;
+            txtPhoneNumberEdit.Visible = false;
+            lblPhoneNumberEdit.Visible = false;
+            btnSaveEdit.Visible = false;
+            lblAddressEdit.Visible = false;
+            txtAddressEdit.Visible = false;
+            btnEdit2.Visible = false;
+            btnDelte2.Visible = false;
+            btnCancel.Visible = false;
         }
 
         private void panelControl2_Paint(object sender, PaintEventArgs e)

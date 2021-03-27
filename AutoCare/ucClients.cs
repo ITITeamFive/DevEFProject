@@ -59,6 +59,7 @@ namespace AutoCare
                 lblPhoneNumber.Visible = false;
                 txtName.Visible = false;
                 txtPhoneNumber.Visible = false;
+                lblEdit.Visible = false;
                 btnSave.Visible = false;
             }
         }
@@ -71,21 +72,8 @@ namespace AutoCare
 
         private void gridControl1_DoubleClick(object sender, EventArgs e)
         {
-            GridView gridView = gridControl1.FocusedView as GridView;
-            object row = gridView.GetRow(gridView.FocusedRowHandle);
-            Client client = (Client)row;
-            lblEdit.Visible = true;
-            lblNameEdit.Visible = true;
-            lblPhoneNumberEdit.Visible = true;
-            txtNameEdit.Visible = true;
-            txtPhoneNumberEdit.Visible = true;
-            btnSaveEdit.Visible = true;
-            if (row != null)
-            {
-                lblClientID.Text = client.clientID.ToString();
-                txtNameEdit.Text = client.clientName.ToString();
-                txtPhoneNumberEdit.Text = client.clientPhoneNumber.ToString();
-            }
+            btnEdit2.Visible = true;
+            btnDelte2.Visible = true;
         }
 
         private void btnSaveEdit_Click_1(object sender, EventArgs e)
@@ -105,7 +93,64 @@ namespace AutoCare
             txtPhoneNumberEdit.Visible = false;
             lblNameEdit.Visible = false;
             lblPhoneNumberEdit.Visible = false;
+            lblEdit.Visible = false;
             btnSaveEdit.Visible = false;
+            btnCancel.Visible = false;
+        }
+
+        private void btnEdit2_Click(object sender, EventArgs e)
+        {
+            btnEdit2.Visible = false;
+            btnDelte2.Visible = false;
+
+            GridView gridView = gridControl1.FocusedView as GridView;
+            object row = gridView.GetRow(gridView.FocusedRowHandle);
+            Client client = (Client)row;
+            lblEdit.Visible = true;
+            lblNameEdit.Visible = true;
+            lblPhoneNumberEdit.Visible = true;
+            txtNameEdit.Visible = true;
+            txtPhoneNumberEdit.Visible = true;
+            btnSaveEdit.Visible = true;
+            btnCancel.Visible = true;
+            if (row != null)
+            {
+                lblClientID.Text = client.clientID.ToString();
+                txtNameEdit.Text = client.clientName.ToString();
+                txtPhoneNumberEdit.Text = client.clientPhoneNumber.ToString();
+            }
+        }
+
+        private void btnDelte2_Click(object sender, EventArgs e)
+        {
+            Client row = gridView1.GetRow(gridView1.FocusedRowHandle) as Client;
+            btnEdit2.Visible = false;
+            btnDelte2.Visible = false;
+            if (XtraMessageBox.Show($"هل انت متأكد من حذف العميل رقم {row.clientID} ؟ ", "تأكيد ",
+                MessageBoxButtons.YesNo)==DialogResult.Yes)
+            {
+                if (row != null)
+                {
+                    ctx.Clients.Remove(row);
+                    ctx.SaveChanges();
+                    clientBindingSource.DataSource = null;
+                    clientBindingSource.DataSource = ctx.Clients.ToList();
+                }
+            }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            lblClientID.Visible = false;
+            lblEdit.Visible = false;
+            lblNameEdit.Visible = false;
+            txtNameEdit.Visible = false;
+            txtPhoneNumberEdit.Visible = false;
+            lblPhoneNumberEdit.Visible = false;
+            btnSaveEdit.Visible = false;
+            btnEdit2.Visible = false;
+            btnDelte2.Visible = false;
+            btnCancel.Visible = false;
         }
     }
 }
