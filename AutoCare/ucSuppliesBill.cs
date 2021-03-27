@@ -35,5 +35,12 @@ namespace AutoCare
 
             gcBillItems.DataSource = billItems;
         }
+
+        private void gridView1_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
+        {
+            // if I put a datasource like context.clients, I can change the DataRow with Client using explicit cast
+            // DataRow row = gridView1.GetDataRow(e.RowHandle);
+            // int id = row.Field<int>("ID");
+        }
     }
 }

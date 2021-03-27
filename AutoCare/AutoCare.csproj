@@ -36,6 +36,7 @@
     <Reference Include="DevExpress.BonusSkins.v20.2" />
     <Reference Include="DevExpress.Data.Desktop.v20.2" />
     <Reference Include="DevExpress.Data.v20.2" />
+    <Reference Include="DevExpress.Images.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v20.2.Core" />
     <Reference Include="DevExpress.Utils.v20.2" />
     <Reference Include="DevExpress.XtraBars.v20.2" />
@@ -65,6 +66,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoCenterDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoCenterDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,12 +102,6 @@
     <Compile Include="ucDisplayBills.Designer.cs">
       <DependentUpon>ucDisplayBills.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucMaintenanceBill.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ucMaintenanceBill.Designer.cs">
-      <DependentUpon>ucMaintenanceBill.cs</DependentUpon>
-    </Compile>
     <Compile Include="ucRepository.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -125,6 +125,12 @@
     </Compile>
     <Compile Include="ucWorkers.Designer.cs">
       <DependentUpon>ucWorkers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucMaintenanceBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMaintenanceBill.Designer.cs">
+      <DependentUpon>ucMaintenanceBill.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -161,7 +167,20 @@
       <DependentUpon>ucWorkers.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
+    <None Include="AutoCenterDataSet.xsc">
+      <DependentUpon>AutoCenterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AutoCenterDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutoCenterDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutoCenterDataSet.xss">
+      <DependentUpon>AutoCenterDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\AutoCare.models.Client.datasource" />
+    <None Include="Properties\DataSources\AutoCare.models.Item.datasource" />
     <None Include="Properties\DataSources\AutoCare.models.SupplierBill.datasource" />
     <None Include="Properties\DataSources\AutoCare.models.SupplierBillItem.datasource" />
     <None Include="Properties\Settings.settings">
