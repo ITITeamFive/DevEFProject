@@ -134,9 +134,9 @@ namespace AutoCare
             if (row != null)
             {
                 labId.Text = item.itemID.ToString();
-                txtName.Text = item.itemName.ToString();
+                txtName.Text = item.itemName;
                 txtPrice.Text = item.itemPrice.ToString();
-                txtModel.Text = item.itemModel.ToString();
+                txtModel.Text = item.itemModel;
                 txtCost.Text = item.itemCost.ToString();
                 txtQuantity.Text = item.itemQuantity.ToString();
 
