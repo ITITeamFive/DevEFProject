@@ -88,6 +88,7 @@ namespace AutoCare
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridControl1.DataSource = this.clientBindingSource;
+            this.gridControl1.Font = new System.Drawing.Font("Tahoma", 12F);
             this.gridControl1.Location = new System.Drawing.Point(3, 169);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
@@ -103,15 +104,22 @@ namespace AutoCare
             // 
             // gridView1
             // 
+            this.gridView1.ColumnPanelRowHeight = 50;
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colclientID,
             this.colclientName,
             this.colclientPhoneNumber});
             this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.GroupRowHeight = 20;
             this.gridView1.Name = "gridView1";
+            this.gridView1.RowHeight = 50;
             // 
             // colclientID
             // 
+            this.colclientID.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.colclientID.AppearanceCell.Options.UseFont = true;
+            this.colclientID.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.colclientID.AppearanceHeader.Options.UseFont = true;
             this.colclientID.Caption = "كود العميل";
             this.colclientID.FieldName = "clientID";
             this.colclientID.MinWidth = 25;
@@ -122,6 +130,10 @@ namespace AutoCare
             // 
             // colclientName
             // 
+            this.colclientName.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.colclientName.AppearanceCell.Options.UseFont = true;
+            this.colclientName.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.colclientName.AppearanceHeader.Options.UseFont = true;
             this.colclientName.Caption = "اسم العميل";
             this.colclientName.FieldName = "clientName";
             this.colclientName.MinWidth = 25;
@@ -132,6 +144,10 @@ namespace AutoCare
             // 
             // colclientPhoneNumber
             // 
+            this.colclientPhoneNumber.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.colclientPhoneNumber.AppearanceCell.Options.UseFont = true;
+            this.colclientPhoneNumber.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.colclientPhoneNumber.AppearanceHeader.Options.UseFont = true;
             this.colclientPhoneNumber.Caption = "رقم الهاتف";
             this.colclientPhoneNumber.FieldName = "clientPhoneNumber";
             this.colclientPhoneNumber.MinWidth = 25;
@@ -161,9 +177,11 @@ namespace AutoCare
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(211, 97);
+            this.btnCancel.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.btnCancel.Appearance.Options.UseFont = true;
+            this.btnCancel.Location = new System.Drawing.Point(223, 108);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(151, 29);
+            this.btnCancel.Size = new System.Drawing.Size(194, 43);
             this.btnCancel.TabIndex = 39;
             this.btnCancel.Text = "الغاء";
             this.btnCancel.Visible = false;
@@ -172,22 +190,26 @@ namespace AutoCare
             // btnDelte2
             // 
             this.btnDelte2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDelte2.Location = new System.Drawing.Point(157, 57);
+            this.btnDelte2.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.btnDelte2.Appearance.Options.UseFont = true;
+            this.btnDelte2.Location = new System.Drawing.Point(158, 36);
             this.btnDelte2.Name = "btnDelte2";
             this.btnDelte2.Size = new System.Drawing.Size(376, 66);
             this.btnDelte2.TabIndex = 38;
-            this.btnDelte2.Text = "Delete";
+            this.btnDelte2.Text = "حذف";
             this.btnDelte2.Visible = false;
             this.btnDelte2.Click += new System.EventHandler(this.btnDelte2_Click);
             // 
             // btnEdit2
             // 
             this.btnEdit2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEdit2.Location = new System.Drawing.Point(585, 57);
+            this.btnEdit2.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.btnEdit2.Appearance.Options.UseFont = true;
+            this.btnEdit2.Location = new System.Drawing.Point(586, 36);
             this.btnEdit2.Name = "btnEdit2";
             this.btnEdit2.Size = new System.Drawing.Size(377, 66);
             this.btnEdit2.TabIndex = 37;
-            this.btnEdit2.Text = "Edit";
+            this.btnEdit2.Text = "تعديل";
             this.btnEdit2.Visible = false;
             this.btnEdit2.Click += new System.EventHandler(this.btnEdit2_Click);
             // 
@@ -203,9 +225,11 @@ namespace AutoCare
             // lblEdit
             // 
             this.lblEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblEdit.Location = new System.Drawing.Point(961, 16);
+            this.lblEdit.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.lblEdit.Appearance.Options.UseFont = true;
+            this.lblEdit.Location = new System.Drawing.Point(940, 16);
             this.lblEdit.Name = "lblEdit";
-            this.lblEdit.Size = new System.Drawing.Size(111, 17);
+            this.lblEdit.Size = new System.Drawing.Size(160, 24);
             this.lblEdit.TabIndex = 34;
             this.lblEdit.Text = "تعديل بيانات العميل";
             this.lblEdit.Visible = false;
@@ -213,9 +237,11 @@ namespace AutoCare
             // btnSaveEdit
             // 
             this.btnSaveEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSaveEdit.Location = new System.Drawing.Point(33, 97);
+            this.btnSaveEdit.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.btnSaveEdit.Appearance.Options.UseFont = true;
+            this.btnSaveEdit.Location = new System.Drawing.Point(23, 108);
             this.btnSaveEdit.Name = "btnSaveEdit";
-            this.btnSaveEdit.Size = new System.Drawing.Size(151, 29);
+            this.btnSaveEdit.Size = new System.Drawing.Size(184, 43);
             this.btnSaveEdit.TabIndex = 33;
             this.btnSaveEdit.Text = "حفظ التعديل";
             this.btnSaveEdit.Visible = false;
@@ -226,16 +252,18 @@ namespace AutoCare
             this.txtPhoneNumberEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPhoneNumberEdit.Location = new System.Drawing.Point(81, 57);
             this.txtPhoneNumberEdit.Name = "txtPhoneNumberEdit";
-            this.txtPhoneNumberEdit.Size = new System.Drawing.Size(263, 22);
+            this.txtPhoneNumberEdit.Size = new System.Drawing.Size(263, 23);
             this.txtPhoneNumberEdit.TabIndex = 30;
             this.txtPhoneNumberEdit.Visible = false;
             // 
             // lblNameEdit
             // 
             this.lblNameEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNameEdit.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.lblNameEdit.Appearance.Options.UseFont = true;
             this.lblNameEdit.Location = new System.Drawing.Point(817, 57);
             this.lblNameEdit.Name = "lblNameEdit";
-            this.lblNameEdit.Size = new System.Drawing.Size(69, 17);
+            this.lblNameEdit.Size = new System.Drawing.Size(99, 24);
             this.lblNameEdit.TabIndex = 31;
             this.lblNameEdit.Text = "اسم العميل";
             this.lblNameEdit.Visible = false;
@@ -243,9 +271,11 @@ namespace AutoCare
             // lblPhoneNumberEdit
             // 
             this.lblPhoneNumberEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPhoneNumberEdit.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.lblPhoneNumberEdit.Appearance.Options.UseFont = true;
             this.lblPhoneNumberEdit.Location = new System.Drawing.Point(368, 57);
             this.lblPhoneNumberEdit.Name = "lblPhoneNumberEdit";
-            this.lblPhoneNumberEdit.Size = new System.Drawing.Size(61, 17);
+            this.lblPhoneNumberEdit.Size = new System.Drawing.Size(87, 24);
             this.lblPhoneNumberEdit.TabIndex = 32;
             this.lblPhoneNumberEdit.Text = "رقم الهاتف";
             this.lblPhoneNumberEdit.Visible = false;
@@ -255,7 +285,7 @@ namespace AutoCare
             this.txtNameEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNameEdit.Location = new System.Drawing.Point(539, 57);
             this.txtNameEdit.Name = "txtNameEdit";
-            this.txtNameEdit.Size = new System.Drawing.Size(250, 22);
+            this.txtNameEdit.Size = new System.Drawing.Size(250, 23);
             this.txtNameEdit.TabIndex = 29;
             this.txtNameEdit.Visible = false;
             // 
@@ -272,22 +302,25 @@ namespace AutoCare
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(1111, 161);
             this.panelControl2.TabIndex = 0;
+            this.panelControl2.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl2_Paint);
             // 
             // txtPhoneNumber
             // 
             this.txtPhoneNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPhoneNumber.Location = new System.Drawing.Point(71, 80);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
-            this.txtPhoneNumber.Size = new System.Drawing.Size(263, 22);
+            this.txtPhoneNumber.Size = new System.Drawing.Size(263, 23);
             this.txtPhoneNumber.TabIndex = 19;
             this.txtPhoneNumber.Visible = false;
             // 
             // lblName
             // 
             this.lblName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblName.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.lblName.Appearance.Options.UseFont = true;
             this.lblName.Location = new System.Drawing.Point(807, 80);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(69, 17);
+            this.lblName.Size = new System.Drawing.Size(119, 29);
             this.lblName.TabIndex = 20;
             this.lblName.Text = "اسم العميل";
             this.lblName.Visible = false;
@@ -295,6 +328,8 @@ namespace AutoCare
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSave.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.btnSave.Appearance.Options.UseFont = true;
             this.btnSave.Location = new System.Drawing.Point(23, 119);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(151, 29);
@@ -306,9 +341,11 @@ namespace AutoCare
             // lblPhoneNumber
             // 
             this.lblPhoneNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPhoneNumber.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.lblPhoneNumber.Appearance.Options.UseFont = true;
             this.lblPhoneNumber.Location = new System.Drawing.Point(358, 80);
             this.lblPhoneNumber.Name = "lblPhoneNumber";
-            this.lblPhoneNumber.Size = new System.Drawing.Size(61, 17);
+            this.lblPhoneNumber.Size = new System.Drawing.Size(105, 29);
             this.lblPhoneNumber.TabIndex = 21;
             this.lblPhoneNumber.Text = "رقم الهاتف";
             this.lblPhoneNumber.Visible = false;
@@ -316,9 +353,11 @@ namespace AutoCare
             // btnAdd
             // 
             this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdd.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.btnAdd.Appearance.Options.UseFont = true;
             this.btnAdd.Location = new System.Drawing.Point(902, 27);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(151, 29);
+            this.btnAdd.Size = new System.Drawing.Size(151, 47);
             this.btnAdd.TabIndex = 22;
             this.btnAdd.Text = "اضافة عميل";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -328,7 +367,7 @@ namespace AutoCare
             this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtName.Location = new System.Drawing.Point(529, 80);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(250, 22);
+            this.txtName.Size = new System.Drawing.Size(250, 23);
             this.txtName.TabIndex = 18;
             this.txtName.Visible = false;
             // 

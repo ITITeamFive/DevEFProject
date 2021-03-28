@@ -59,6 +59,7 @@ namespace AutoCare
             this.Container.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Container.Size = new System.Drawing.Size(1113, 744);
             this.Container.TabIndex = 0;
+            this.Container.Click += new System.EventHandler(this.Container_Click);
             // 
             // accordionControl1
             // 
