@@ -190,7 +190,7 @@ namespace AutoCare
                 context.SaveChanges();
 
                 Item storeItem = context.Items.Find(item.itemID);
-                storeItem.itemQuantity += item.itemQuantity;
+                storeItem.itemQuantity = storeItem.itemQuantity + item.itemQuantity;
                 context.SaveChanges();
             }
 
@@ -215,8 +215,8 @@ namespace AutoCare
                 item.Text = "0";
             }
             memoNotes.Text = string.Empty;
-            txtTotalAfter.Text = string.Empty;
-            txtCash.Text = string.Empty;
+            txtTotalAfter.Text = "0";
+            txtCash.Text = "0";
             billItems.Clear();
         }
 

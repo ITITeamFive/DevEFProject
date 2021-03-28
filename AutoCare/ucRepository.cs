@@ -22,7 +22,7 @@ namespace AutoCare
         {
             get
             {
-                if (_instance == null)
+                //if (_instance == null)
                     _instance = new ucRepository();
                 return _instance;
             }
@@ -58,7 +58,7 @@ namespace AutoCare
             CenterContext context = new CenterContext();
             itemBindingSource.DataSource = context.Items.ToList();
 
-            itemBindingSource.DataSource = context.Items.ToList();
+            //itemBindingSource.DataSource = context.Items.ToList();
         }
 
 

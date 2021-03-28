@@ -73,8 +73,9 @@ namespace AutoCare
             this.panelControl1.Controls.Add(this.gridControl1);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
+            this.panelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1037, 435);
+            this.panelControl1.Size = new System.Drawing.Size(1210, 535);
             this.panelControl1.TabIndex = 1;
             // 
             // panelControl2
@@ -93,18 +94,19 @@ namespace AutoCare
             this.panelControl2.Controls.Add(this.txtQuantity);
             this.panelControl2.Controls.Add(this.txtCost);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl2.Location = new System.Drawing.Point(2, 285);
+            this.panelControl2.Location = new System.Drawing.Point(2, 351);
+            this.panelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(1033, 148);
+            this.panelControl2.Size = new System.Drawing.Size(1206, 182);
             this.panelControl2.TabIndex = 3;
             // 
             // labEditItem
             // 
             this.labEditItem.AutoSize = true;
             this.labEditItem.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labEditItem.Location = new System.Drawing.Point(829, 2);
+            this.labEditItem.Location = new System.Drawing.Point(967, 2);
             this.labEditItem.Name = "labEditItem";
-            this.labEditItem.Size = new System.Drawing.Size(78, 14);
+            this.labEditItem.Size = new System.Drawing.Size(95, 18);
             this.labEditItem.TabIndex = 39;
             this.labEditItem.Text = "تعديل المنتج";
             this.labEditItem.Visible = false;
@@ -112,18 +114,19 @@ namespace AutoCare
             // labId
             // 
             this.labId.AutoSize = true;
-            this.labId.Location = new System.Drawing.Point(204, 113);
+            this.labId.Location = new System.Drawing.Point(238, 139);
             this.labId.Name = "labId";
-            this.labId.Size = new System.Drawing.Size(0, 13);
+            this.labId.Size = new System.Drawing.Size(0, 17);
             this.labId.TabIndex = 31;
             this.labId.Visible = false;
             // 
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(5, 53);
+            this.btnSave.Location = new System.Drawing.Point(6, 65);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(60, 22);
+            this.btnSave.Size = new System.Drawing.Size(70, 27);
             this.btnSave.TabIndex = 29;
             this.btnSave.Text = "تعديل";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -132,10 +135,11 @@ namespace AutoCare
             // 
             // txtPrice
             // 
-            this.txtPrice.Font = new System.Drawing.Font("Tahoma", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrice.Location = new System.Drawing.Point(458, 92);
+            this.txtPrice.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrice.Location = new System.Drawing.Point(534, 113);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(195, 18);
+            this.txtPrice.Size = new System.Drawing.Size(227, 32);
             this.txtPrice.TabIndex = 27;
             this.txtPrice.Visible = false;
             // 
@@ -143,20 +147,20 @@ namespace AutoCare
             // 
             this.labCost.AutoSize = true;
             this.labCost.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labCost.Location = new System.Drawing.Point(337, 24);
+            this.labCost.Location = new System.Drawing.Point(393, 30);
             this.labCost.Name = "labCost";
-            this.labCost.Size = new System.Drawing.Size(74, 13);
+            this.labCost.Size = new System.Drawing.Size(86, 17);
             this.labCost.TabIndex = 26;
-            this.labCost.Text = "تكلفت المنتج";
+            this.labCost.Text = "تكلفة المنتج";
             this.labCost.Visible = false;
             // 
             // labPrice
             // 
             this.labPrice.AutoSize = true;
             this.labPrice.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labPrice.Location = new System.Drawing.Point(720, 93);
+            this.labPrice.Location = new System.Drawing.Point(840, 114);
             this.labPrice.Name = "labPrice";
-            this.labPrice.Size = new System.Drawing.Size(66, 13);
+            this.labPrice.Size = new System.Drawing.Size(81, 17);
             this.labPrice.TabIndex = 25;
             this.labPrice.Text = "سعر المنتج";
             this.labPrice.Visible = false;
@@ -165,9 +169,9 @@ namespace AutoCare
             // 
             this.labQuantity.AutoSize = true;
             this.labQuantity.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labQuantity.Location = new System.Drawing.Point(720, 53);
+            this.labQuantity.Location = new System.Drawing.Point(840, 65);
             this.labQuantity.Name = "labQuantity";
-            this.labQuantity.Size = new System.Drawing.Size(66, 13);
+            this.labQuantity.Size = new System.Drawing.Size(82, 17);
             this.labQuantity.TabIndex = 24;
             this.labQuantity.Text = "كمية المنتج";
             this.labQuantity.Visible = false;
@@ -176,9 +180,9 @@ namespace AutoCare
             // 
             this.labModel.AutoSize = true;
             this.labModel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labModel.Location = new System.Drawing.Point(337, 93);
+            this.labModel.Location = new System.Drawing.Point(393, 114);
             this.labModel.Name = "labModel";
-            this.labModel.Size = new System.Drawing.Size(71, 13);
+            this.labModel.Size = new System.Drawing.Size(86, 17);
             this.labModel.TabIndex = 23;
             this.labModel.Text = "اصدار المنتج";
             this.labModel.Visible = false;
@@ -187,9 +191,9 @@ namespace AutoCare
             // 
             this.labName.AutoSize = true;
             this.labName.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labName.Location = new System.Drawing.Point(720, 19);
+            this.labName.Location = new System.Drawing.Point(840, 23);
             this.labName.Name = "labName";
-            this.labName.Size = new System.Drawing.Size(66, 13);
+            this.labName.Size = new System.Drawing.Size(80, 17);
             this.labName.TabIndex = 22;
             this.labName.Text = "اسم المنتج";
             this.labName.Visible = false;
@@ -197,10 +201,11 @@ namespace AutoCare
             // txtName
             // 
             this.txtName.BackColor = System.Drawing.Color.White;
-            this.txtName.Font = new System.Drawing.Font("Tahoma", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(458, 19);
+            this.txtName.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(534, 23);
+            this.txtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(195, 18);
+            this.txtName.Size = new System.Drawing.Size(227, 32);
             this.txtName.TabIndex = 21;
             this.txtName.Visible = false;
             this.txtName.TextChanged += new System.EventHandler(this.itemName_TextChanged);
@@ -208,30 +213,33 @@ namespace AutoCare
             // txtModel
             // 
             this.txtModel.BackColor = System.Drawing.Color.White;
-            this.txtModel.Font = new System.Drawing.Font("Tahoma", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtModel.Location = new System.Drawing.Point(99, 87);
+            this.txtModel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtModel.Location = new System.Drawing.Point(115, 107);
+            this.txtModel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtModel.Name = "txtModel";
-            this.txtModel.Size = new System.Drawing.Size(195, 18);
+            this.txtModel.Size = new System.Drawing.Size(227, 32);
             this.txtModel.TabIndex = 20;
             this.txtModel.Visible = false;
             // 
             // txtQuantity
             // 
             this.txtQuantity.BackColor = System.Drawing.Color.White;
-            this.txtQuantity.Font = new System.Drawing.Font("Tahoma", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQuantity.Location = new System.Drawing.Point(458, 52);
+            this.txtQuantity.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuantity.Location = new System.Drawing.Point(534, 64);
+            this.txtQuantity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(195, 18);
+            this.txtQuantity.Size = new System.Drawing.Size(227, 32);
             this.txtQuantity.TabIndex = 19;
             this.txtQuantity.Visible = false;
             // 
             // txtCost
             // 
             this.txtCost.BackColor = System.Drawing.Color.White;
-            this.txtCost.Font = new System.Drawing.Font("Tahoma", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCost.Location = new System.Drawing.Point(99, 23);
+            this.txtCost.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCost.Location = new System.Drawing.Point(115, 28);
+            this.txtCost.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCost.Name = "txtCost";
-            this.txtCost.Size = new System.Drawing.Size(195, 18);
+            this.txtCost.Size = new System.Drawing.Size(227, 32);
             this.txtCost.TabIndex = 38;
             this.txtCost.Visible = false;
             // 
@@ -241,12 +249,14 @@ namespace AutoCare
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridControl1.DataSource = this.itemBindingSource;
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControl1.Location = new System.Drawing.Point(2, 2);
             this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemGridLookUpEdit1});
-            this.gridControl1.Size = new System.Drawing.Size(1033, 274);
+            this.gridControl1.Size = new System.Drawing.Size(1205, 337);
             this.gridControl1.TabIndex = 2;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -259,6 +269,7 @@ namespace AutoCare
             // 
             // gridView1
             // 
+            this.gridView1.ColumnPanelRowHeight = 40;
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colitemID,
             this.colitemName,
@@ -266,56 +277,95 @@ namespace AutoCare
             this.colitemPrice,
             this.colitemCost,
             this.colitemModel});
+            this.gridView1.DetailHeight = 431;
             this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.GroupRowHeight = 40;
             this.gridView1.Name = "gridView1";
+            this.gridView1.RowHeight = 35;
             // 
             // colitemID
             // 
+            this.colitemID.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colitemID.AppearanceCell.Options.UseFont = true;
+            this.colitemID.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colitemID.AppearanceHeader.Options.UseFont = true;
             this.colitemID.Caption = "رقم القطعة";
             this.colitemID.FieldName = "itemID";
+            this.colitemID.MinWidth = 23;
             this.colitemID.Name = "colitemID";
             this.colitemID.Visible = true;
             this.colitemID.VisibleIndex = 0;
+            this.colitemID.Width = 87;
             // 
             // colitemName
             // 
+            this.colitemName.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colitemName.AppearanceCell.Options.UseFont = true;
+            this.colitemName.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colitemName.AppearanceHeader.Options.UseFont = true;
             this.colitemName.Caption = "اسم القطعة";
             this.colitemName.FieldName = "itemName";
+            this.colitemName.MinWidth = 23;
             this.colitemName.Name = "colitemName";
             this.colitemName.Visible = true;
             this.colitemName.VisibleIndex = 1;
+            this.colitemName.Width = 87;
             // 
             // colitemQuantity
             // 
+            this.colitemQuantity.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colitemQuantity.AppearanceCell.Options.UseFont = true;
+            this.colitemQuantity.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colitemQuantity.AppearanceHeader.Options.UseFont = true;
             this.colitemQuantity.Caption = "كميه القطع";
             this.colitemQuantity.FieldName = "itemQuantity";
+            this.colitemQuantity.MinWidth = 23;
             this.colitemQuantity.Name = "colitemQuantity";
             this.colitemQuantity.Visible = true;
             this.colitemQuantity.VisibleIndex = 2;
+            this.colitemQuantity.Width = 87;
             // 
             // colitemPrice
             // 
+            this.colitemPrice.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colitemPrice.AppearanceCell.Options.UseFont = true;
+            this.colitemPrice.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colitemPrice.AppearanceHeader.Options.UseFont = true;
             this.colitemPrice.Caption = "سعر القطعة";
             this.colitemPrice.FieldName = "itemPrice";
+            this.colitemPrice.MinWidth = 23;
             this.colitemPrice.Name = "colitemPrice";
             this.colitemPrice.Visible = true;
             this.colitemPrice.VisibleIndex = 3;
+            this.colitemPrice.Width = 87;
             // 
             // colitemCost
             // 
-            this.colitemCost.Caption = "تكلفت القطعة ";
+            this.colitemCost.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colitemCost.AppearanceCell.Options.UseFont = true;
+            this.colitemCost.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colitemCost.AppearanceHeader.Options.UseFont = true;
+            this.colitemCost.Caption = "تكلفة القطعة ";
             this.colitemCost.FieldName = "itemCost";
+            this.colitemCost.MinWidth = 23;
             this.colitemCost.Name = "colitemCost";
             this.colitemCost.Visible = true;
             this.colitemCost.VisibleIndex = 4;
+            this.colitemCost.Width = 87;
             // 
             // colitemModel
             // 
+            this.colitemModel.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colitemModel.AppearanceCell.Options.UseFont = true;
+            this.colitemModel.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colitemModel.AppearanceHeader.Options.UseFont = true;
             this.colitemModel.Caption = "اصدار القطعة";
             this.colitemModel.FieldName = "itemModel";
+            this.colitemModel.MinWidth = 23;
             this.colitemModel.Name = "colitemModel";
             this.colitemModel.Visible = true;
             this.colitemModel.VisibleIndex = 5;
+            this.colitemModel.Width = 87;
             // 
             // repositoryItemGridLookUpEdit1
             // 
@@ -329,6 +379,7 @@ namespace AutoCare
             // 
             // gridView2
             // 
+            this.gridView2.DetailHeight = 431;
             this.gridView2.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsSelection.EnableAppearanceFocusedCell = false;
@@ -336,12 +387,12 @@ namespace AutoCare
             // 
             // ucRepository
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelControl1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ucRepository";
-            this.Size = new System.Drawing.Size(1037, 435);
+            this.Size = new System.Drawing.Size(1210, 535);
             this.Load += new System.EventHandler(this.ucRepository_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);

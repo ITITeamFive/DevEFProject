@@ -18,7 +18,7 @@ namespace AutoCare
 {
     public partial class ucMaintenanceBill : DevExpress.XtraEditors.XtraUserControl
     {
-        int BillNUM=1;
+        int BillNUM = 1;
         int clientId = 0;
         Regex regex = new Regex("^[0-9]+$");
         CenterContext centerContext = new CenterContext();
@@ -47,7 +47,7 @@ namespace AutoCare
         public System.Windows.Forms.TextBox[] total_arr = new System.Windows.Forms.TextBox[12];
         public System.Windows.Forms.TextBox[] MaintenanceFees_arr = new System.Windows.Forms.TextBox[12];
 
-        
+
         double totalPrice = 0;
         double MaintanenceFees = 0;
 
@@ -57,7 +57,7 @@ namespace AutoCare
         public ucMaintenanceBill()
         {
             InitializeComponent();
-        price_arr = new System.Windows.Forms.ComboBox[]{ cbPrice1, cbPrice2, cbPrice3, cbPrice4
+            price_arr = new System.Windows.Forms.ComboBox[]{ cbPrice1, cbPrice2, cbPrice3, cbPrice4
         , cbPrice5, cbPrice6, cbPrice7, cbPrice8, cbPrice9, cbPrice10, cbPrice11, cbPrice12};
 
             total_arr = new System.Windows.Forms.TextBox[]{txtTotal1,txtTotal2,txtTotal3,txtTotal4,
@@ -75,7 +75,7 @@ namespace AutoCare
             ,txtMaintenanceFees6,txtMaintenanceFees7,txtMaintenanceFees8,txtMaintenanceFees9
             ,txtMaintenanceFees10,txtMaintenanceFees11,txtMaintenanceFees12};
 
-            }
+        }
         void bbiPrintPreview_ItemClick(object sender, ItemClickEventArgs e)
         {
             TotalCalculate();
@@ -85,7 +85,7 @@ namespace AutoCare
             dlgSettings.Document = doc;
 
             PrinterSettings PrinterSetting = new PrinterSettings();
-//            doc.PrinterSettings.PrinterName = "Eltron P310 Card Printer";
+            //            doc.PrinterSettings.PrinterName = "Eltron P310 Card Printer";
             doc.PrinterSettings.Copies = 10;
             doc.PrinterSettings.DefaultPageSettings.Landscape = true;
 
@@ -106,7 +106,7 @@ namespace AutoCare
         }
         void EmptySelectedItms()
         {
-            for(int i = 0; i < 12; i++)
+            for (int i = 0; i < 12; i++)
             {
                 items_arr[i].SelectedItem = null;
                 price_arr[i].SelectedItem = null;
@@ -137,8 +137,8 @@ namespace AutoCare
             MaintanenceFees = 0;
             for (int i = 0; i < 12; i++)
             {
-                
-                if (price_arr[i].SelectedItem != null )
+
+                if (price_arr[i].SelectedItem != null)
                 {
                     if (quantity_arr[i].Text == "")
                     {
@@ -162,7 +162,7 @@ namespace AutoCare
 
             }
             txtTotalPrice.Text = totalPrice.ToString();
-            txtTotalPriceAfterDiscound.Text=(totalPrice- totalPrice* Convert.ToInt32(txtDiscound.Text)/100).ToString();
+            txtTotalPriceAfterDiscound.Text = (totalPrice - totalPrice * Convert.ToInt32(txtDiscound.Text) / 100).ToString();
         }
         void SaveBillToDatabase()
         {
@@ -202,7 +202,7 @@ namespace AutoCare
                 var query1 = from v in centerContext.Cars
                              where v.carLicense == txtCarLicense.Text
                              select new { v.carID };
-                if (query1.Count()==0)
+                if (query1.Count() == 0)
                 {
                     //if (txtCarLicense.Text == "")
                     //{
@@ -233,7 +233,7 @@ namespace AutoCare
                     }
                     catch (Exception e)
                     {
-                        MessageBox.Show("احذف العناصر المتكررة ");
+                        MessageBox.Show(" احذف العناصر  المتكررة ");
                     }
                 }
 
@@ -277,6 +277,11 @@ namespace AutoCare
                         {
                             centerContext.ClientBillItems.Add(billItem);
                             centerContext.SaveChanges();
+
+                            Item item = centerContext.Items.Find(billItem.itemID);
+                            item.itemQuantity -= billItem.itemQuantity;
+                            centerContext.SaveChanges();
+
                         }
                         catch (Exception e)
                         {
@@ -299,7 +304,7 @@ namespace AutoCare
         private void ucMaintenanceBill_Load_1(object sender, EventArgs e)
         {
             ClientBill c = centerContext.ClientBills.OrderByDescending(u => u.billID).FirstOrDefault();
-            BillNUM = c==null ? 1 : c.billID;
+            BillNUM = c == null ? 1 : c.billID;
             txtBillNumber.Text = BillNUM.ToString();
             this.clientTableAdapter.Fill(this.autoCenterDataSet.Client);
             this.itemTableAdapter.Fill(this.autoCenterDataSet.Item);
@@ -350,7 +355,20 @@ namespace AutoCare
         private void txtQuantity1_TextChanged(object sender, EventArgs e)
         {
             validateNumber(sender);
+            //ValidateQuantity(sender, 0);
         }
+
+        //void ValidateQuantity(object sender, int boxnum)
+        //{
+        //    double quantity = float.Parse(((TextBox)sender).Text);
+        //    string itemName = items_arr[boxnum].SelectedItem;
+
+        //    if (quantity > itemQuantity)
+        //    {
+        //        MessageBox.Show("الكمية غير متوفرة");
+        //        ((TextBox)sender).Text = itemQuantity.ToString();
+        //    }
+        //}
 
         void validateNumber(object sender)
         {
@@ -360,7 +378,7 @@ namespace AutoCare
             {
                 MessageBox.Show("من فضلك ادخل رقم صحيح");
                 s.Text = "1";
-//                s.ForeColor = Color.Red;
+                //                s.ForeColor = Color.Red;
             }
             else
             {

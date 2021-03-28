@@ -54,12 +54,16 @@ namespace AutoCare
 
         private void acRepository_Click(object sender, EventArgs e)
         {
-            if (!Container.Controls.Contains(ucRepository.Instance))
-            {
-                Container.Controls.Add(ucRepository.Instance);
-                ucRepository.Instance.Dock = DockStyle.Fill;
-            }
-            ucRepository.Instance.BringToFront();
+            //if (!Container.Controls.Contains(ucRepository.Instance))
+            //{
+            //    Container.Controls.Add(ucRepository.Instance);
+            //    ucRepository.Instance.Dock = DockStyle.Fill;
+            //}
+            //ucRepository.Instance.BringToFront();
+            ucRepository repository = new ucRepository();
+            Container.Controls.Add(repository);
+            repository.Dock = DockStyle.Fill;
+            repository.BringToFront();
         }
 
         private void acClients_Click(object sender, EventArgs e)

@@ -121,7 +121,7 @@ namespace AutoCare
             this.btnCancel.Location = new System.Drawing.Point(101, 118);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(176, 47);
+            this.btnCancel.Size = new System.Drawing.Size(176, 48);
             this.btnCancel.TabIndex = 49;
             this.btnCancel.Text = "الغاء";
             this.btnCancel.Visible = false;
@@ -171,7 +171,7 @@ namespace AutoCare
             // txtAddressEdit
             // 
             this.txtAddressEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAddressEdit.Location = new System.Drawing.Point(310, 78);
+            this.txtAddressEdit.Location = new System.Drawing.Point(333, 84);
             this.txtAddressEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAddressEdit.Name = "txtAddressEdit";
             this.txtAddressEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
@@ -213,7 +213,7 @@ namespace AutoCare
             this.btnSaveEdit.Location = new System.Drawing.Point(-93, 118);
             this.btnSaveEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaveEdit.Name = "btnSaveEdit";
-            this.btnSaveEdit.Size = new System.Drawing.Size(150, 41);
+            this.btnSaveEdit.Size = new System.Drawing.Size(150, 48);
             this.btnSaveEdit.TabIndex = 42;
             this.btnSaveEdit.Text = "حفظ التعديل";
             this.btnSaveEdit.Visible = false;
@@ -222,7 +222,7 @@ namespace AutoCare
             // txtPhoneNumberEdit
             // 
             this.txtPhoneNumberEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPhoneNumberEdit.Location = new System.Drawing.Point(-143, 80);
+            this.txtPhoneNumberEdit.Location = new System.Drawing.Point(-77, 80);
             this.txtPhoneNumberEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhoneNumberEdit.Name = "txtPhoneNumberEdit";
             this.txtPhoneNumberEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
@@ -260,10 +260,12 @@ namespace AutoCare
             // txtNameEdit
             // 
             this.txtNameEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNameEdit.Location = new System.Drawing.Point(727, 87);
+            this.txtNameEdit.Location = new System.Drawing.Point(753, 88);
             this.txtNameEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNameEdit.Name = "txtNameEdit";
-            this.txtNameEdit.Size = new System.Drawing.Size(250, 23);
+            this.txtNameEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNameEdit.Properties.Appearance.Options.UseFont = true;
+            this.txtNameEdit.Size = new System.Drawing.Size(250, 30);
             this.txtNameEdit.TabIndex = 38;
             this.txtNameEdit.Visible = false;
             // 

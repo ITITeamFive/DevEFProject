@@ -5,6 +5,7 @@ namespace AutoCare.models
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
+    using System.ServiceModel;
 
     [Table("Item")]
     public partial class Item

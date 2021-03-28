@@ -24,13 +24,14 @@ namespace AutoCare
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            foreach (var item in layoutControl1.Items.OfType<TextEdit>())
+            foreach (var item in layoutControl1.Controls.OfType<TextEdit>())
             {
                 if (string.IsNullOrWhiteSpace(item.Text))
                 {
                     XtraMessageBox.Show("يجب استكمال باقي الخانات");
                     return;
                 }
+            }
 
                 if(ucSuppliesBill.context.Items.FirstOrDefault(I=>I.itemName == txtName.Text) != null)
                 {
@@ -60,7 +61,7 @@ namespace AutoCare
                 ucSuppliesBill.AddOneItemToBill(ucSuppliesBill.context.Items.First(I=>I.itemName == txtName.Text));
 
                 Close();
-            }
+            
         }
     }
 }

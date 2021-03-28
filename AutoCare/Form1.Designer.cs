@@ -168,6 +168,7 @@ namespace AutoCare
             this.acFinance.Name = "acFinance";
             this.acFinance.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acFinance.Text = "الحسابات";
+            this.acFinance.Visible = false;
             // 
             // fluentDesignFormControl1
             // 
