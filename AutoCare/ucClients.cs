@@ -50,7 +50,16 @@ namespace AutoCare
             if (client != null)
             {
                 ctx.Clients.Add(client);
-                ctx.SaveChanges();
+
+                 try
+                    {
+                    ctx.SaveChanges();
+                }
+                    catch (Exception )
+                    {
+                        MessageBox.Show("من فضلك اضف بيانات صحيحة");
+                    }
+               
                 clientBindingSource.DataSource = null;
                 clientBindingSource.DataSource = ctx.Clients.ToList();
                 txtPhoneNumber.Text = "";
@@ -84,7 +93,15 @@ namespace AutoCare
 
             EditedClient.clientName = txtNameEdit.Text;
             EditedClient.clientPhoneNumber = txtPhoneNumberEdit.Text;
-            ctx.SaveChanges();
+
+            try
+            {
+                ctx.SaveChanges();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("من فضلك اضف بيانات صحيحة");
+            }
             clientBindingSource.DataSource = null;
             clientBindingSource.DataSource = ctx.Clients.ToList();
             txtNameEdit.Text = "";
@@ -132,7 +149,14 @@ namespace AutoCare
                 if (row != null)
                 {
                     ctx.Clients.Remove(row);
-                    ctx.SaveChanges();
+                    try
+                    {
+                        ctx.SaveChanges();
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("من فضلك اضف بيانات صحيحة");
+                    }
                     clientBindingSource.DataSource = null;
                     clientBindingSource.DataSource = ctx.Clients.ToList();
                 }
@@ -151,6 +175,11 @@ namespace AutoCare
             btnEdit2.Visible = false;
             btnDelte2.Visible = false;
             btnCancel.Visible = false;
+        }
+
+        private void panelControl2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

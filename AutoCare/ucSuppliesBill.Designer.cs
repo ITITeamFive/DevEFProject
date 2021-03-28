@@ -212,19 +212,25 @@ namespace AutoCare
             this.gridView1.Appearance.Row.Options.UseFont = true;
             this.gridView1.Appearance.SelectedRow.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridView1.Appearance.SelectedRow.Options.UseFont = true;
+            this.gridView1.ColumnPanelRowHeight = 50;
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.itemQuantity,
             this.itemName,
             this.itemCost,
             this.itemTotal});
             this.gridView1.GridControl = this.gcBillItems;
+            this.gridView1.GroupRowHeight = 50;
             this.gridView1.Name = "gridView1";
+            this.gridView1.RowHeight = 35;
             this.gridView1.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView1_RowCellClick);
             this.gridView1.CellValueChanged += new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(this.gridView1_CellValueChanged);
             this.gridView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gridView1_KeyDown);
             // 
             // itemQuantity
             // 
+            this.itemQuantity.AppearanceCell.Options.UseTextOptions = true;
+            this.itemQuantity.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.itemQuantity.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.itemQuantity.Caption = "الكمية";
             this.itemQuantity.FieldName = "itemQuantity";
             this.itemQuantity.MinWidth = 25;
@@ -235,6 +241,9 @@ namespace AutoCare
             // 
             // itemName
             // 
+            this.itemName.AppearanceCell.Options.UseTextOptions = true;
+            this.itemName.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.itemName.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.itemName.Caption = "اسم المعدة";
             this.itemName.FieldName = "itemName";
             this.itemName.MinWidth = 25;
@@ -246,6 +255,9 @@ namespace AutoCare
             // 
             // itemCost
             // 
+            this.itemCost.AppearanceCell.Options.UseTextOptions = true;
+            this.itemCost.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.itemCost.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.itemCost.Caption = "التكلفة";
             this.itemCost.FieldName = "itemCost";
             this.itemCost.MinWidth = 25;
@@ -256,6 +268,9 @@ namespace AutoCare
             // 
             // itemTotal
             // 
+            this.itemTotal.AppearanceCell.Options.UseTextOptions = true;
+            this.itemTotal.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.itemTotal.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.itemTotal.Caption = "الاجمالي";
             this.itemTotal.FieldName = "itemTotal";
             this.itemTotal.MinWidth = 25;

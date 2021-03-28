@@ -47,28 +47,35 @@ namespace AutoCare
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Worker worker = new Worker()
-            {   
-                workerName = txtboxname.Text,
-                workerPhoneNumber = txtPhoneNumber.Text,
-                workerSalary = int.Parse(txtSal.Text) , 
-                workerStartDate =Convert.ToDateTime(txtStart.Text),
-                workerEndDate = Convert.ToDateTime(txtEnd.Text)};
-
-            if (worker != null)
+            try
             {
-                context.Workers.Add(worker);
-                context.SaveChanges();
+                Worker worker = new Worker()
+                {
+                    workerName = txtboxname.Text,
+                    workerPhoneNumber = txtPhoneNumber.Text,
+                    workerSalary = int.Parse(txtSal.Text),
+                    workerStartDate = Convert.ToDateTime(txtStart.Text),
+                    workerEndDate = Convert.ToDateTime(txtEnd.Text)
+                };
+                                if (worker != null)
+                {
+                    context.Workers.Add(worker);
+                    context.SaveChanges();
 
-                workerBindingSource.DataSource = null;
-                workerBindingSource.DataSource = context.Workers.ToList();
+                    workerBindingSource.DataSource = null;
+                    workerBindingSource.DataSource = context.Workers.ToList();
 
+                    txtboxname.Text = "";
+                    txtPhoneNumber.Text = "";
+                    txtSal.Text = "";
+                    txtStart.Text = "";
+                    txtEnd.Text = "";
+                }
 
-                txtboxname.Text = "";
-                txtPhoneNumber.Text = "";
-                txtSal.Text = "";
-                txtStart.Text = "";
-                txtEnd.Text = ""; 
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("من فضلك اضف بياناالعامل كاملة ");
             }
 
 
@@ -107,9 +114,14 @@ namespace AutoCare
             workerUpdate.workerStartDate = Convert.ToDateTime(txtStartdate.Text);
             workerUpdate.workerEndDate = Convert.ToDateTime(txtEnddate.Text);
 
-
-            context.SaveChanges();
-
+            try
+            {
+                context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("من فضلك اضف بيانات صحيحة");
+            }
             workerBindingSource.DataSource = null;
             workerBindingSource.DataSource = context.Workers.ToList();
 
@@ -255,6 +267,11 @@ namespace AutoCare
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelControl3_Paint(object sender, PaintEventArgs e)
         {
 
         }

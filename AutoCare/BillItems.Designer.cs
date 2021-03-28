@@ -65,9 +65,10 @@ namespace AutoCare
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(39, 12);
+            this.labelControl1.Location = new System.Drawing.Point(45, 15);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(131, 24);
+            this.labelControl1.Size = new System.Drawing.Size(163, 30);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Auto Care 180";
             this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
@@ -76,9 +77,10 @@ namespace AutoCare
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(346, 12);
+            this.labelControl2.Location = new System.Drawing.Point(404, 15);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(108, 24);
+            this.labelControl2.Size = new System.Drawing.Size(145, 30);
             this.labelControl2.TabIndex = 1;
             this.labelControl2.Text = "Supplier Bill";
             this.labelControl2.Click += new System.EventHandler(this.labelControl2_Click);
@@ -89,9 +91,10 @@ namespace AutoCare
             this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(381, 52);
+            this.labelControl3.Location = new System.Drawing.Point(444, 64);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(34, 17);
+            this.labelControl3.Size = new System.Drawing.Size(43, 21);
             this.labelControl3.TabIndex = 2;
             this.labelControl3.Text = "Bill #:";
             this.labelControl3.Click += new System.EventHandler(this.labelControl3_Click);
@@ -102,26 +105,29 @@ namespace AutoCare
             this.labelControl4.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(381, 81);
+            this.labelControl4.Location = new System.Drawing.Point(444, 100);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(55, 17);
+            this.labelControl4.Size = new System.Drawing.Size(67, 21);
             this.labelControl4.TabIndex = 3;
             this.labelControl4.Text = "Bill Date:";
             this.labelControl4.Click += new System.EventHandler(this.labelControl4_Click);
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(471, 54);
+            this.labelControl5.Location = new System.Drawing.Point(549, 66);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(0, 13);
+            this.labelControl5.Size = new System.Drawing.Size(0, 16);
             this.labelControl5.TabIndex = 4;
             this.labelControl5.Click += new System.EventHandler(this.labelControl5_Click);
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(471, 83);
+            this.labelControl6.Location = new System.Drawing.Point(549, 102);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(0, 13);
+            this.labelControl6.Size = new System.Drawing.Size(0, 16);
             this.labelControl6.TabIndex = 5;
             this.labelControl6.Click += new System.EventHandler(this.labelControl6_Click);
             // 
@@ -129,9 +135,10 @@ namespace AutoCare
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(52, 116);
+            this.labelControl7.Location = new System.Drawing.Point(61, 143);
+            this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(50, 17);
+            this.labelControl7.Size = new System.Drawing.Size(61, 22);
             this.labelControl7.TabIndex = 6;
             this.labelControl7.Text = "Bill To:";
             // 
@@ -141,9 +148,10 @@ namespace AutoCare
             this.labelControl8.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.labelControl8.Appearance.Options.UseFont = true;
             this.labelControl8.Appearance.Options.UseForeColor = true;
-            this.labelControl8.Location = new System.Drawing.Point(52, 153);
+            this.labelControl8.Location = new System.Drawing.Point(61, 188);
+            this.labelControl8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(50, 17);
+            this.labelControl8.Size = new System.Drawing.Size(66, 21);
             this.labelControl8.TabIndex = 7;
             this.labelControl8.Text = "Supplier:";
             // 
@@ -153,9 +161,10 @@ namespace AutoCare
             this.labelControl9.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.labelControl9.Appearance.Options.UseFont = true;
             this.labelControl9.Appearance.Options.UseForeColor = true;
-            this.labelControl9.Location = new System.Drawing.Point(50, 176);
+            this.labelControl9.Location = new System.Drawing.Point(58, 217);
+            this.labelControl9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(52, 17);
+            this.labelControl9.Size = new System.Drawing.Size(67, 21);
             this.labelControl9.TabIndex = 8;
             this.labelControl9.Text = "Address:";
             // 
@@ -165,9 +174,10 @@ namespace AutoCare
             this.labelControl10.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.labelControl10.Appearance.Options.UseFont = true;
             this.labelControl10.Appearance.Options.UseForeColor = true;
-            this.labelControl10.Location = new System.Drawing.Point(52, 199);
+            this.labelControl10.Location = new System.Drawing.Point(61, 245);
+            this.labelControl10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(40, 17);
+            this.labelControl10.Size = new System.Drawing.Size(51, 21);
             this.labelControl10.TabIndex = 9;
             this.labelControl10.Text = "Phone:";
             // 
@@ -175,27 +185,30 @@ namespace AutoCare
             // 
             this.labelControl11.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Location = new System.Drawing.Point(159, 155);
+            this.labelControl11.Location = new System.Drawing.Point(185, 191);
+            this.labelControl11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(0, 17);
+            this.labelControl11.Size = new System.Drawing.Size(0, 21);
             this.labelControl11.TabIndex = 10;
             // 
             // labelControl12
             // 
             this.labelControl12.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Location = new System.Drawing.Point(159, 178);
+            this.labelControl12.Location = new System.Drawing.Point(185, 219);
+            this.labelControl12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(0, 17);
+            this.labelControl12.Size = new System.Drawing.Size(0, 21);
             this.labelControl12.TabIndex = 11;
             // 
             // labelControl13
             // 
             this.labelControl13.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Location = new System.Drawing.Point(159, 201);
+            this.labelControl13.Location = new System.Drawing.Point(185, 247);
+            this.labelControl13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(0, 17);
+            this.labelControl13.Size = new System.Drawing.Size(0, 21);
             this.labelControl13.TabIndex = 12;
             // 
             // gridControl1
@@ -203,15 +216,17 @@ namespace AutoCare
             this.gridControl1.DataSource = this.supplierBillItemBindingSource;
             this.gridControl1.EmbeddedNavigator.Appearance.BorderColor = System.Drawing.Color.White;
             this.gridControl1.EmbeddedNavigator.Appearance.Options.UseBorderColor = true;
-            this.gridControl1.Location = new System.Drawing.Point(23, 236);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridControl1.Location = new System.Drawing.Point(27, 290);
             this.gridControl1.LookAndFeel.SkinName = "DevExpress Style";
             this.gridControl1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
             this.gridControl1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemGridLookUpEdit1});
-            this.gridControl1.Size = new System.Drawing.Size(522, 172);
+            this.gridControl1.Size = new System.Drawing.Size(609, 212);
             this.gridControl1.TabIndex = 13;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -263,6 +278,7 @@ namespace AutoCare
             this.colitemCost,
             this.colitemQuantity,
             this.gridColumn1});
+            this.gridView1.DetailHeight = 431;
             this.gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.None;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
@@ -283,11 +299,12 @@ namespace AutoCare
             this.colitemID.Caption = "Item";
             this.colitemID.ColumnEdit = this.repositoryItemGridLookUpEdit1;
             this.colitemID.FieldName = "itemID";
+            this.colitemID.MinWidth = 23;
             this.colitemID.Name = "colitemID";
             this.colitemID.OptionsColumn.AllowEdit = false;
             this.colitemID.Visible = true;
             this.colitemID.VisibleIndex = 0;
-            this.colitemID.Width = 127;
+            this.colitemID.Width = 148;
             // 
             // repositoryItemGridLookUpEdit1
             // 
@@ -306,6 +323,7 @@ namespace AutoCare
             // 
             // repositoryItemGridLookUpEdit1View
             // 
+            this.repositoryItemGridLookUpEdit1View.DetailHeight = 431;
             this.repositoryItemGridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.repositoryItemGridLookUpEdit1View.Name = "repositoryItemGridLookUpEdit1View";
             this.repositoryItemGridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
@@ -317,21 +335,23 @@ namespace AutoCare
             this.colitemCost.DisplayFormat.FormatString = "c2";
             this.colitemCost.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colitemCost.FieldName = "itemCost";
+            this.colitemCost.MinWidth = 23;
             this.colitemCost.Name = "colitemCost";
             this.colitemCost.OptionsColumn.AllowEdit = false;
             this.colitemCost.Visible = true;
             this.colitemCost.VisibleIndex = 1;
-            this.colitemCost.Width = 102;
+            this.colitemCost.Width = 119;
             // 
             // colitemQuantity
             // 
             this.colitemQuantity.Caption = "Quantity";
             this.colitemQuantity.FieldName = "itemQuantity";
+            this.colitemQuantity.MinWidth = 23;
             this.colitemQuantity.Name = "colitemQuantity";
             this.colitemQuantity.OptionsColumn.AllowEdit = false;
             this.colitemQuantity.Visible = true;
             this.colitemQuantity.VisibleIndex = 2;
-            this.colitemQuantity.Width = 90;
+            this.colitemQuantity.Width = 105;
             // 
             // gridColumn1
             // 
@@ -339,6 +359,7 @@ namespace AutoCare
             this.gridColumn1.DisplayFormat.FormatString = "c2";
             this.gridColumn1.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn1.FieldName = "TotalCost";
+            this.gridColumn1.MinWidth = 23;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowEdit = false;
             this.gridColumn1.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -347,15 +368,15 @@ namespace AutoCare
             this.gridColumn1.UnboundType = DevExpress.Data.UnboundColumnType.Decimal;
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 3;
-            this.gridColumn1.Width = 190;
+            this.gridColumn1.Width = 222;
             // 
             // BillItems
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(575, 537);
+            this.ClientSize = new System.Drawing.Size(671, 661);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.labelControl13);
             this.Controls.Add(this.labelControl12);
@@ -371,7 +392,9 @@ namespace AutoCare
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl1);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "BillItems";
+            this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BillItems";
             this.Load += new System.EventHandler(this.BillItems_Load);

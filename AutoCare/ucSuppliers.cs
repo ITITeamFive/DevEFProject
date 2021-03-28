@@ -57,7 +57,14 @@ namespace AutoCare
             if (supplier != null)
             {
                 ctx.Suppliers.Add(supplier);
-                ctx.SaveChanges();
+                try
+                {
+                    ctx.SaveChanges();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("من فضلك اضف بيانات صحيحة");
+                }
                 supplierBindingSource.DataSource = null;
                 supplierBindingSource.DataSource = ctx.Suppliers.ToList();
                 txtPhoneNumber.Text = "";
@@ -115,8 +122,15 @@ namespace AutoCare
             EditedSupplier.supplierName = txtNameEdit.Text;
             EditedSupplier.supplierPhoneNumber = txtPhoneNumberEdit.Text;
             EditedSupplier.supplierAddress = txtAddressEdit.Text;
-            ctx.SaveChanges();
-            
+            try
+            {
+                ctx.SaveChanges();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("من فضلك اضف بيانات صحيحة");
+            }
+
             supplierBindingSource.DataSource = null;
             supplierBindingSource.DataSource = ctx.Suppliers.ToList();
             
@@ -172,7 +186,14 @@ namespace AutoCare
                 if (row != null)
                 {
                     ctx.Suppliers.Remove(row);
-                    ctx.SaveChanges();
+                    try
+                    {
+                        ctx.SaveChanges();
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("من فضلك اضف بيانات صحيحة");
+                    }
                     supplierBindingSource.DataSource = null;
                     supplierBindingSource.DataSource = ctx.Suppliers.ToList();
                 }
