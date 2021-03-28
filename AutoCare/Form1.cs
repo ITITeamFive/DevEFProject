@@ -91,5 +91,10 @@ namespace AutoCare
             }
             ucWorkers.Instance.BringToFront();
         }
+
+        private void Container_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -75,5 +75,10 @@ namespace AutoCare
         {
 
         }
+
+        private void labelControl8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

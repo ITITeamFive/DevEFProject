@@ -76,13 +76,14 @@ namespace AutoCare
             this.itemTableAdapter = new AutoCare.AutoCenterDataSetTableAdapters.ItemTableAdapter();
             this.clientBillBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clientBillTableAdapter = new AutoCare.AutoCenterDataSetTableAdapters.ClientBillTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printDocument2 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.txtTotal1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.txtCarBrand = new System.Windows.Forms.TextBox();
             this.txtMaintenanceFees1 = new System.Windows.Forms.TextBox();
             this.txtCarModel = new System.Windows.Forms.TextBox();
@@ -213,6 +214,8 @@ namespace AutoCare
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBillBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -479,17 +482,6 @@ namespace AutoCare
             // 
             this.clientBillTableAdapter.ClearBeforeFill = true;
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Tahoma", 16F);
-            this.button1.Location = new System.Drawing.Point(6, 724);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(218, 78);
-            this.button1.TabIndex = 181;
-            this.button1.Text = "حفظ الفاتورة";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // printDialog1
             // 
             this.printDialog1.UseEXDialog = true;
@@ -510,107 +502,7 @@ namespace AutoCare
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtTotal1);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.txtCarBrand);
-            this.groupBox1.Controls.Add(this.txtMaintenanceFees1);
-            this.groupBox1.Controls.Add(this.txtCarModel);
-            this.groupBox1.Controls.Add(this.comboItm1);
-            this.groupBox1.Controls.Add(this.cbPrice1);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.txtQuantity1);
-            this.groupBox1.Controls.Add(this.textBox69);
-            this.groupBox1.Controls.Add(this.textBox70);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox78);
-            this.groupBox1.Controls.Add(this.textBox68);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox71);
-            this.groupBox1.Controls.Add(this.txtNotes);
-            this.groupBox1.Controls.Add(this.textBox67);
-            this.groupBox1.Controls.Add(this.txtKilometer);
-            this.groupBox1.Controls.Add(this.textBox72);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox73);
-            this.groupBox1.Controls.Add(this.txtCarLicense);
-            this.groupBox1.Controls.Add(this.textBox74);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox75);
-            this.groupBox1.Controls.Add(this.label21);
-            this.groupBox1.Controls.Add(this.cbClientPhone);
-            this.groupBox1.Controls.Add(this.textBox77);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label20);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label19);
-            this.groupBox1.Controls.Add(this.cbClientName);
-            this.groupBox1.Controls.Add(this.textBox76);
-            this.groupBox1.Controls.Add(this.txtBillNumber);
-            this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Controls.Add(this.txtTotalPriceAfterDiscound);
-            this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.textBox37);
-            this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.txtDiscound);
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.textBox39);
-            this.groupBox1.Controls.Add(this.txtQuantity3);
-            this.groupBox1.Controls.Add(this.txtTotalPrice);
-            this.groupBox1.Controls.Add(this.cbPrice3);
-            this.groupBox1.Controls.Add(this.textBox42);
-            this.groupBox1.Controls.Add(this.comboItm3);
-            this.groupBox1.Controls.Add(this.txtTotal12);
-            this.groupBox1.Controls.Add(this.txtMaintenanceFees3);
-            this.groupBox1.Controls.Add(this.txtMaintenanceFees12);
-            this.groupBox1.Controls.Add(this.txtTotal3);
-            this.groupBox1.Controls.Add(this.comboItm12);
-            this.groupBox1.Controls.Add(this.txtQuantity2);
-            this.groupBox1.Controls.Add(this.cbPrice12);
-            this.groupBox1.Controls.Add(this.cbPrice2);
-            this.groupBox1.Controls.Add(this.txtQuantity12);
-            this.groupBox1.Controls.Add(this.comboItm2);
-            this.groupBox1.Controls.Add(this.txtTotal11);
-            this.groupBox1.Controls.Add(this.txtMaintenanceFees2);
-            this.groupBox1.Controls.Add(this.txtMaintenanceFees11);
-            this.groupBox1.Controls.Add(this.txtTotal2);
-            this.groupBox1.Controls.Add(this.comboItm11);
-            this.groupBox1.Controls.Add(this.txtQuantity4);
-            this.groupBox1.Controls.Add(this.cbPrice11);
-            this.groupBox1.Controls.Add(this.cbPrice4);
-            this.groupBox1.Controls.Add(this.txtQuantity11);
-            this.groupBox1.Controls.Add(this.comboItm4);
-            this.groupBox1.Controls.Add(this.txtTotal10);
-            this.groupBox1.Controls.Add(this.txtMaintenanceFees4);
-            this.groupBox1.Controls.Add(this.txtMaintenanceFees10);
-            this.groupBox1.Controls.Add(this.txtTotal4);
-            this.groupBox1.Controls.Add(this.comboItm10);
-            this.groupBox1.Controls.Add(this.txtQuantity5);
-            this.groupBox1.Controls.Add(this.cbPrice10);
-            this.groupBox1.Controls.Add(this.cbPrice5);
-            this.groupBox1.Controls.Add(this.txtQuantity10);
-            this.groupBox1.Controls.Add(this.comboItm5);
-            this.groupBox1.Controls.Add(this.txtTotal9);
-            this.groupBox1.Controls.Add(this.txtMaintenanceFees5);
-            this.groupBox1.Controls.Add(this.txtMaintenanceFees9);
-            this.groupBox1.Controls.Add(this.txtTotal5);
-            this.groupBox1.Controls.Add(this.comboItm9);
-            this.groupBox1.Controls.Add(this.txtQuantity6);
-            this.groupBox1.Controls.Add(this.cbPrice9);
-            this.groupBox1.Controls.Add(this.cbPrice6);
-            this.groupBox1.Controls.Add(this.txtQuantity9);
-            this.groupBox1.Controls.Add(this.comboItm6);
-            this.groupBox1.Controls.Add(this.txtTotal8);
-            this.groupBox1.Controls.Add(this.txtMaintenanceFees6);
-            this.groupBox1.Controls.Add(this.txtMaintenanceFees8);
-            this.groupBox1.Controls.Add(this.txtTotal6);
-            this.groupBox1.Controls.Add(this.comboItm8);
-            this.groupBox1.Controls.Add(this.txtQuantity7);
-            this.groupBox1.Controls.Add(this.cbPrice8);
-            this.groupBox1.Controls.Add(this.cbPrice7);
-            this.groupBox1.Controls.Add(this.txtQuantity8);
-            this.groupBox1.Controls.Add(this.comboItm7);
-            this.groupBox1.Controls.Add(this.txtTotal7);
-            this.groupBox1.Controls.Add(this.txtMaintenanceFees7);
+            this.groupBox1.Controls.Add(this.panelControl1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 143);
             this.groupBox1.Name = "groupBox1";
@@ -619,27 +511,148 @@ namespace AutoCare
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // panelControl1
+            // 
+            this.panelControl1.Appearance.BackColor = System.Drawing.Color.White;
+            this.panelControl1.Appearance.Options.UseBackColor = true;
+            this.panelControl1.Controls.Add(this.txtTotal1);
+            this.panelControl1.Controls.Add(this.button1);
+            this.panelControl1.Controls.Add(this.txtCarBrand);
+            this.panelControl1.Controls.Add(this.txtMaintenanceFees1);
+            this.panelControl1.Controls.Add(this.txtCarModel);
+            this.panelControl1.Controls.Add(this.comboItm1);
+            this.panelControl1.Controls.Add(this.cbPrice1);
+            this.panelControl1.Controls.Add(this.label6);
+            this.panelControl1.Controls.Add(this.txtQuantity1);
+            this.panelControl1.Controls.Add(this.textBox69);
+            this.panelControl1.Controls.Add(this.textBox70);
+            this.panelControl1.Controls.Add(this.label7);
+            this.panelControl1.Controls.Add(this.textBox78);
+            this.panelControl1.Controls.Add(this.textBox68);
+            this.panelControl1.Controls.Add(this.label5);
+            this.panelControl1.Controls.Add(this.textBox71);
+            this.panelControl1.Controls.Add(this.txtNotes);
+            this.panelControl1.Controls.Add(this.textBox67);
+            this.panelControl1.Controls.Add(this.txtKilometer);
+            this.panelControl1.Controls.Add(this.textBox72);
+            this.panelControl1.Controls.Add(this.label4);
+            this.panelControl1.Controls.Add(this.textBox73);
+            this.panelControl1.Controls.Add(this.txtCarLicense);
+            this.panelControl1.Controls.Add(this.textBox74);
+            this.panelControl1.Controls.Add(this.label3);
+            this.panelControl1.Controls.Add(this.textBox75);
+            this.panelControl1.Controls.Add(this.label21);
+            this.panelControl1.Controls.Add(this.cbClientPhone);
+            this.panelControl1.Controls.Add(this.textBox77);
+            this.panelControl1.Controls.Add(this.label2);
+            this.panelControl1.Controls.Add(this.label20);
+            this.panelControl1.Controls.Add(this.label1);
+            this.panelControl1.Controls.Add(this.label19);
+            this.panelControl1.Controls.Add(this.cbClientName);
+            this.panelControl1.Controls.Add(this.textBox76);
+            this.panelControl1.Controls.Add(this.txtBillNumber);
+            this.panelControl1.Controls.Add(this.label18);
+            this.panelControl1.Controls.Add(this.txtTotalPriceAfterDiscound);
+            this.panelControl1.Controls.Add(this.label17);
+            this.panelControl1.Controls.Add(this.textBox37);
+            this.panelControl1.Controls.Add(this.label16);
+            this.panelControl1.Controls.Add(this.txtDiscound);
+            this.panelControl1.Controls.Add(this.label15);
+            this.panelControl1.Controls.Add(this.textBox39);
+            this.panelControl1.Controls.Add(this.txtQuantity3);
+            this.panelControl1.Controls.Add(this.txtTotalPrice);
+            this.panelControl1.Controls.Add(this.cbPrice3);
+            this.panelControl1.Controls.Add(this.textBox42);
+            this.panelControl1.Controls.Add(this.comboItm3);
+            this.panelControl1.Controls.Add(this.txtTotal12);
+            this.panelControl1.Controls.Add(this.txtMaintenanceFees3);
+            this.panelControl1.Controls.Add(this.txtMaintenanceFees12);
+            this.panelControl1.Controls.Add(this.txtTotal3);
+            this.panelControl1.Controls.Add(this.comboItm12);
+            this.panelControl1.Controls.Add(this.txtQuantity2);
+            this.panelControl1.Controls.Add(this.cbPrice12);
+            this.panelControl1.Controls.Add(this.cbPrice2);
+            this.panelControl1.Controls.Add(this.txtQuantity12);
+            this.panelControl1.Controls.Add(this.comboItm2);
+            this.panelControl1.Controls.Add(this.txtTotal11);
+            this.panelControl1.Controls.Add(this.txtMaintenanceFees2);
+            this.panelControl1.Controls.Add(this.txtMaintenanceFees11);
+            this.panelControl1.Controls.Add(this.txtTotal2);
+            this.panelControl1.Controls.Add(this.comboItm11);
+            this.panelControl1.Controls.Add(this.txtQuantity4);
+            this.panelControl1.Controls.Add(this.cbPrice11);
+            this.panelControl1.Controls.Add(this.cbPrice4);
+            this.panelControl1.Controls.Add(this.txtQuantity11);
+            this.panelControl1.Controls.Add(this.comboItm4);
+            this.panelControl1.Controls.Add(this.txtTotal10);
+            this.panelControl1.Controls.Add(this.txtMaintenanceFees4);
+            this.panelControl1.Controls.Add(this.txtMaintenanceFees10);
+            this.panelControl1.Controls.Add(this.txtTotal4);
+            this.panelControl1.Controls.Add(this.comboItm10);
+            this.panelControl1.Controls.Add(this.txtQuantity5);
+            this.panelControl1.Controls.Add(this.cbPrice10);
+            this.panelControl1.Controls.Add(this.cbPrice5);
+            this.panelControl1.Controls.Add(this.txtQuantity10);
+            this.panelControl1.Controls.Add(this.comboItm5);
+            this.panelControl1.Controls.Add(this.txtTotal9);
+            this.panelControl1.Controls.Add(this.txtMaintenanceFees5);
+            this.panelControl1.Controls.Add(this.txtMaintenanceFees9);
+            this.panelControl1.Controls.Add(this.txtTotal5);
+            this.panelControl1.Controls.Add(this.comboItm9);
+            this.panelControl1.Controls.Add(this.txtQuantity6);
+            this.panelControl1.Controls.Add(this.cbPrice9);
+            this.panelControl1.Controls.Add(this.cbPrice6);
+            this.panelControl1.Controls.Add(this.txtQuantity9);
+            this.panelControl1.Controls.Add(this.comboItm6);
+            this.panelControl1.Controls.Add(this.txtTotal8);
+            this.panelControl1.Controls.Add(this.txtMaintenanceFees6);
+            this.panelControl1.Controls.Add(this.txtMaintenanceFees8);
+            this.panelControl1.Controls.Add(this.txtTotal6);
+            this.panelControl1.Controls.Add(this.comboItm8);
+            this.panelControl1.Controls.Add(this.txtQuantity7);
+            this.panelControl1.Controls.Add(this.cbPrice8);
+            this.panelControl1.Controls.Add(this.cbPrice7);
+            this.panelControl1.Controls.Add(this.txtQuantity8);
+            this.panelControl1.Controls.Add(this.comboItm7);
+            this.panelControl1.Controls.Add(this.txtTotal7);
+            this.panelControl1.Controls.Add(this.txtMaintenanceFees7);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl1.Location = new System.Drawing.Point(3, 19);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(1458, 1970);
+            this.panelControl1.TabIndex = 0;
+            // 
             // txtTotal1
             // 
             this.txtTotal1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtTotal1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtTotal1.Font = new System.Drawing.Font("Tahoma", 14F);
             this.txtTotal1.ForeColor = System.Drawing.Color.Black;
-            this.txtTotal1.Location = new System.Drawing.Point(240, 202);
+            this.txtTotal1.Location = new System.Drawing.Point(387, 195);
             this.txtTotal1.Name = "txtTotal1";
             this.txtTotal1.ReadOnly = true;
             this.txtTotal1.Size = new System.Drawing.Size(115, 36);
-            this.txtTotal1.TabIndex = 103;
+            this.txtTotal1.TabIndex = 223;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Tahoma", 16F);
+            this.button1.Location = new System.Drawing.Point(153, 717);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(218, 78);
+            this.button1.TabIndex = 290;
+            this.button1.Text = "حفظ الفاتورة";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // txtCarBrand
             // 
             this.txtCarBrand.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtCarBrand.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtCarBrand.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtCarBrand.Location = new System.Drawing.Point(6, 122);
+            this.txtCarBrand.Location = new System.Drawing.Point(153, 115);
             this.txtCarBrand.Name = "txtCarBrand";
             this.txtCarBrand.Size = new System.Drawing.Size(169, 36);
-            this.txtCarBrand.TabIndex = 199;
+            this.txtCarBrand.TabIndex = 300;
             this.txtCarBrand.Text = "0";
             // 
             // txtMaintenanceFees1
@@ -647,22 +660,20 @@ namespace AutoCare
             this.txtMaintenanceFees1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtMaintenanceFees1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtMaintenanceFees1.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtMaintenanceFees1.Location = new System.Drawing.Point(367, 202);
+            this.txtMaintenanceFees1.Location = new System.Drawing.Point(514, 195);
             this.txtMaintenanceFees1.Name = "txtMaintenanceFees1";
             this.txtMaintenanceFees1.Size = new System.Drawing.Size(128, 36);
-            this.txtMaintenanceFees1.TabIndex = 102;
-            this.txtMaintenanceFees1.TextChanged += new System.EventHandler(this.txtMaintenanceFees1_TextChanged);
+            this.txtMaintenanceFees1.TabIndex = 222;
             // 
             // txtCarModel
             // 
             this.txtCarModel.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtCarModel.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtCarModel.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtCarModel.Location = new System.Drawing.Point(6, 73);
+            this.txtCarModel.Location = new System.Drawing.Point(153, 66);
             this.txtCarModel.Name = "txtCarModel";
             this.txtCarModel.Size = new System.Drawing.Size(169, 36);
-            this.txtCarModel.TabIndex = 197;
-            this.txtCarModel.TextChanged += new System.EventHandler(this.txtCarModel_TextChanged);
+            this.txtCarModel.TabIndex = 298;
             // 
             // comboItm1
             // 
@@ -672,10 +683,10 @@ namespace AutoCare
             this.comboItm1.DisplayMember = "itemName";
             this.comboItm1.Font = new System.Drawing.Font("Tahoma", 14F);
             this.comboItm1.FormattingEnabled = true;
-            this.comboItm1.Location = new System.Drawing.Point(744, 202);
+            this.comboItm1.Location = new System.Drawing.Point(891, 195);
             this.comboItm1.Name = "comboItm1";
             this.comboItm1.Size = new System.Drawing.Size(277, 36);
-            this.comboItm1.TabIndex = 100;
+            this.comboItm1.TabIndex = 221;
             this.comboItm1.ValueMember = "itemID";
             // 
             // cbPrice1
@@ -686,21 +697,20 @@ namespace AutoCare
             this.cbPrice1.DisplayMember = "itemPrice";
             this.cbPrice1.Font = new System.Drawing.Font("Tahoma", 14F);
             this.cbPrice1.FormattingEnabled = true;
-            this.cbPrice1.Location = new System.Drawing.Point(624, 202);
+            this.cbPrice1.Location = new System.Drawing.Point(771, 195);
             this.cbPrice1.Name = "cbPrice1";
             this.cbPrice1.Size = new System.Drawing.Size(114, 36);
-            this.cbPrice1.TabIndex = 99;
+            this.cbPrice1.TabIndex = 220;
             this.cbPrice1.ValueMember = "itemPrice";
-            this.cbPrice1.SelectedIndexChanged += new System.EventHandler(this.cbPrice1_SelectedIndexChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 20F);
-            this.label6.Location = new System.Drawing.Point(181, 117);
+            this.label6.Location = new System.Drawing.Point(328, 110);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(93, 41);
-            this.label6.TabIndex = 198;
+            this.label6.TabIndex = 299;
             this.label6.Text = "ماركه";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -709,21 +719,20 @@ namespace AutoCare
             this.txtQuantity1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtQuantity1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtQuantity1.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtQuantity1.Location = new System.Drawing.Point(502, 202);
+            this.txtQuantity1.Location = new System.Drawing.Point(649, 195);
             this.txtQuantity1.Name = "txtQuantity1";
             this.txtQuantity1.Size = new System.Drawing.Size(116, 36);
-            this.txtQuantity1.TabIndex = 98;
-            this.txtQuantity1.TextChanged += new System.EventHandler(this.txtQuantity1_TextChanged);
+            this.txtQuantity1.TabIndex = 219;
             // 
             // textBox69
             // 
             this.textBox69.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox69.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.textBox69.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBox69.Location = new System.Drawing.Point(1027, 328);
+            this.textBox69.Location = new System.Drawing.Point(1174, 321);
             this.textBox69.Name = "textBox69";
             this.textBox69.Size = new System.Drawing.Size(93, 36);
-            this.textBox69.TabIndex = 64;
+            this.textBox69.TabIndex = 209;
             this.textBox69.Text = "4";
             this.textBox69.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -732,10 +741,10 @@ namespace AutoCare
             this.textBox70.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox70.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.textBox70.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBox70.Location = new System.Drawing.Point(1027, 370);
+            this.textBox70.Location = new System.Drawing.Point(1174, 363);
             this.textBox70.Name = "textBox70";
             this.textBox70.Size = new System.Drawing.Size(93, 36);
-            this.textBox70.TabIndex = 63;
+            this.textBox70.TabIndex = 208;
             this.textBox70.Text = "5";
             this.textBox70.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -743,10 +752,10 @@ namespace AutoCare
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 20F);
-            this.label7.Location = new System.Drawing.Point(181, 68);
+            this.label7.Location = new System.Drawing.Point(328, 61);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(101, 41);
-            this.label7.TabIndex = 196;
+            this.label7.TabIndex = 297;
             this.label7.Text = "موديل";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -755,10 +764,10 @@ namespace AutoCare
             this.textBox78.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox78.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.textBox78.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBox78.Location = new System.Drawing.Point(1027, 201);
+            this.textBox78.Location = new System.Drawing.Point(1174, 194);
             this.textBox78.Name = "textBox78";
             this.textBox78.Size = new System.Drawing.Size(93, 36);
-            this.textBox78.TabIndex = 52;
+            this.textBox78.TabIndex = 200;
             this.textBox78.Text = "1";
             this.textBox78.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -767,10 +776,10 @@ namespace AutoCare
             this.textBox68.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox68.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.textBox68.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBox68.Location = new System.Drawing.Point(1027, 286);
+            this.textBox68.Location = new System.Drawing.Point(1174, 279);
             this.textBox68.Name = "textBox68";
             this.textBox68.Size = new System.Drawing.Size(93, 36);
-            this.textBox68.TabIndex = 65;
+            this.textBox68.TabIndex = 210;
             this.textBox68.Text = "3";
             this.textBox68.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -778,10 +787,10 @@ namespace AutoCare
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(2, 169);
+            this.label5.Location = new System.Drawing.Point(149, 162);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(200, 21);
-            this.label5.TabIndex = 193;
+            this.label5.TabIndex = 296;
             this.label5.Text = "ملاحظات للزيارة القادمة";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -790,19 +799,19 @@ namespace AutoCare
             this.textBox71.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox71.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.textBox71.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBox71.Location = new System.Drawing.Point(1027, 412);
+            this.textBox71.Location = new System.Drawing.Point(1174, 405);
             this.textBox71.Name = "textBox71";
             this.textBox71.Size = new System.Drawing.Size(93, 36);
-            this.textBox71.TabIndex = 62;
+            this.textBox71.TabIndex = 207;
             this.textBox71.Text = "6";
             this.textBox71.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtNotes
             // 
-            this.txtNotes.Location = new System.Drawing.Point(6, 202);
+            this.txtNotes.Location = new System.Drawing.Point(153, 195);
             this.txtNotes.Name = "txtNotes";
             this.txtNotes.Size = new System.Drawing.Size(216, 499);
-            this.txtNotes.TabIndex = 192;
+            this.txtNotes.TabIndex = 295;
             this.txtNotes.Text = "";
             // 
             // textBox67
@@ -810,10 +819,10 @@ namespace AutoCare
             this.textBox67.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox67.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.textBox67.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBox67.Location = new System.Drawing.Point(1027, 244);
+            this.textBox67.Location = new System.Drawing.Point(1174, 237);
             this.textBox67.Name = "textBox67";
             this.textBox67.Size = new System.Drawing.Size(93, 36);
-            this.textBox67.TabIndex = 66;
+            this.textBox67.TabIndex = 211;
             this.textBox67.Text = "2";
             this.textBox67.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -822,22 +831,21 @@ namespace AutoCare
             this.txtKilometer.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtKilometer.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtKilometer.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtKilometer.Location = new System.Drawing.Point(281, 123);
+            this.txtKilometer.Location = new System.Drawing.Point(428, 116);
             this.txtKilometer.Name = "txtKilometer";
             this.txtKilometer.Size = new System.Drawing.Size(187, 36);
-            this.txtKilometer.TabIndex = 188;
+            this.txtKilometer.TabIndex = 294;
             this.txtKilometer.Text = "0";
-            this.txtKilometer.TextChanged += new System.EventHandler(this.txtKilometer_TextChanged);
             // 
             // textBox72
             // 
             this.textBox72.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox72.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.textBox72.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBox72.Location = new System.Drawing.Point(1027, 454);
+            this.textBox72.Location = new System.Drawing.Point(1174, 447);
             this.textBox72.Name = "textBox72";
             this.textBox72.Size = new System.Drawing.Size(93, 36);
-            this.textBox72.TabIndex = 61;
+            this.textBox72.TabIndex = 206;
             this.textBox72.Text = "7";
             this.textBox72.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -845,10 +853,10 @@ namespace AutoCare
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 20F);
-            this.label4.Location = new System.Drawing.Point(474, 118);
+            this.label4.Location = new System.Drawing.Point(621, 111);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(171, 41);
-            this.label4.TabIndex = 187;
+            this.label4.TabIndex = 293;
             this.label4.Text = "قراءة العداد";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -857,10 +865,10 @@ namespace AutoCare
             this.textBox73.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox73.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.textBox73.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBox73.Location = new System.Drawing.Point(1027, 496);
+            this.textBox73.Location = new System.Drawing.Point(1174, 489);
             this.textBox73.Name = "textBox73";
             this.textBox73.Size = new System.Drawing.Size(93, 36);
-            this.textBox73.TabIndex = 60;
+            this.textBox73.TabIndex = 205;
             this.textBox73.Text = "8";
             this.textBox73.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -869,20 +877,20 @@ namespace AutoCare
             this.txtCarLicense.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtCarLicense.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtCarLicense.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtCarLicense.Location = new System.Drawing.Point(281, 74);
+            this.txtCarLicense.Location = new System.Drawing.Point(428, 67);
             this.txtCarLicense.Name = "txtCarLicense";
             this.txtCarLicense.Size = new System.Drawing.Size(187, 36);
-            this.txtCarLicense.TabIndex = 186;
+            this.txtCarLicense.TabIndex = 292;
             // 
             // textBox74
             // 
             this.textBox74.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox74.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.textBox74.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBox74.Location = new System.Drawing.Point(1027, 538);
+            this.textBox74.Location = new System.Drawing.Point(1174, 531);
             this.textBox74.Name = "textBox74";
             this.textBox74.Size = new System.Drawing.Size(93, 36);
-            this.textBox74.TabIndex = 59;
+            this.textBox74.TabIndex = 204;
             this.textBox74.Text = "9";
             this.textBox74.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -890,10 +898,10 @@ namespace AutoCare
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 20F);
-            this.label3.Location = new System.Drawing.Point(474, 69);
+            this.label3.Location = new System.Drawing.Point(621, 62);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(168, 41);
-            this.label3.TabIndex = 185;
+            this.label3.TabIndex = 291;
             this.label3.Text = "رقم العربية";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -902,10 +910,10 @@ namespace AutoCare
             this.textBox75.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox75.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.textBox75.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBox75.Location = new System.Drawing.Point(1027, 580);
+            this.textBox75.Location = new System.Drawing.Point(1174, 573);
             this.textBox75.Name = "textBox75";
             this.textBox75.Size = new System.Drawing.Size(93, 36);
-            this.textBox75.TabIndex = 58;
+            this.textBox75.TabIndex = 203;
             this.textBox75.Text = "10";
             this.textBox75.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -913,10 +921,10 @@ namespace AutoCare
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Tahoma", 20F);
-            this.label21.Location = new System.Drawing.Point(944, 14);
+            this.label21.Location = new System.Drawing.Point(1091, 7);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(176, 41);
-            this.label21.TabIndex = 91;
+            this.label21.TabIndex = 212;
             this.label21.Text = "رقم الفاتورة";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -928,10 +936,10 @@ namespace AutoCare
             this.cbClientPhone.DisplayMember = "clientPhoneNumber";
             this.cbClientPhone.Font = new System.Drawing.Font("Tahoma", 14F);
             this.cbClientPhone.FormattingEnabled = true;
-            this.cbClientPhone.Location = new System.Drawing.Point(652, 120);
+            this.cbClientPhone.Location = new System.Drawing.Point(799, 113);
             this.cbClientPhone.Name = "cbClientPhone";
             this.cbClientPhone.Size = new System.Drawing.Size(277, 36);
-            this.cbClientPhone.TabIndex = 172;
+            this.cbClientPhone.TabIndex = 289;
             this.cbClientPhone.ValueMember = "clientID";
             // 
             // textBox77
@@ -939,10 +947,10 @@ namespace AutoCare
             this.textBox77.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox77.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.textBox77.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBox77.Location = new System.Drawing.Point(1027, 664);
+            this.textBox77.Location = new System.Drawing.Point(1174, 657);
             this.textBox77.Name = "textBox77";
             this.textBox77.Size = new System.Drawing.Size(93, 36);
-            this.textBox77.TabIndex = 56;
+            this.textBox77.TabIndex = 201;
             this.textBox77.Text = "12";
             this.textBox77.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -950,10 +958,10 @@ namespace AutoCare
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 20F);
-            this.label2.Location = new System.Drawing.Point(944, 74);
+            this.label2.Location = new System.Drawing.Point(1091, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(185, 41);
-            this.label2.TabIndex = 171;
+            this.label2.TabIndex = 288;
             this.label2.Text = "اسم العميل";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -961,10 +969,10 @@ namespace AutoCare
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Tahoma", 20F);
-            this.label20.Location = new System.Drawing.Point(174, 16);
+            this.label20.Location = new System.Drawing.Point(321, 9);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(263, 41);
-            this.label20.TabIndex = 92;
+            this.label20.TabIndex = 213;
             this.label20.Text = "AutoCare Center";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -972,10 +980,10 @@ namespace AutoCare
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 20F);
-            this.label1.Location = new System.Drawing.Point(965, 115);
+            this.label1.Location = new System.Drawing.Point(1112, 108);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(155, 41);
-            this.label1.TabIndex = 170;
+            this.label1.TabIndex = 287;
             this.label1.Text = "رقم تلفون";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -983,10 +991,10 @@ namespace AutoCare
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
-            this.label19.Location = new System.Drawing.Point(760, 162);
+            this.label19.Location = new System.Drawing.Point(907, 155);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(252, 29);
-            this.label19.TabIndex = 93;
+            this.label19.TabIndex = 214;
             this.label19.Text = "الخدمة او قطعة الغيار";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -998,10 +1006,10 @@ namespace AutoCare
             this.cbClientName.DisplayMember = "clientName";
             this.cbClientName.Font = new System.Drawing.Font("Tahoma", 14F);
             this.cbClientName.FormattingEnabled = true;
-            this.cbClientName.Location = new System.Drawing.Point(652, 74);
+            this.cbClientName.Location = new System.Drawing.Point(799, 67);
             this.cbClientName.Name = "cbClientName";
             this.cbClientName.Size = new System.Drawing.Size(277, 36);
-            this.cbClientName.TabIndex = 167;
+            this.cbClientName.TabIndex = 286;
             this.cbClientName.ValueMember = "clientID";
             // 
             // textBox76
@@ -1009,10 +1017,10 @@ namespace AutoCare
             this.textBox76.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox76.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.textBox76.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBox76.Location = new System.Drawing.Point(1027, 622);
+            this.textBox76.Location = new System.Drawing.Point(1174, 615);
             this.textBox76.Name = "textBox76";
             this.textBox76.Size = new System.Drawing.Size(93, 36);
-            this.textBox76.TabIndex = 57;
+            this.textBox76.TabIndex = 202;
             this.textBox76.Text = "11";
             this.textBox76.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1021,21 +1029,20 @@ namespace AutoCare
             this.txtBillNumber.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtBillNumber.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtBillNumber.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtBillNumber.Location = new System.Drawing.Point(822, 21);
+            this.txtBillNumber.Location = new System.Drawing.Point(969, 14);
             this.txtBillNumber.Name = "txtBillNumber";
             this.txtBillNumber.ReadOnly = true;
             this.txtBillNumber.Size = new System.Drawing.Size(116, 36);
-            this.txtBillNumber.TabIndex = 165;
-            this.txtBillNumber.TextChanged += new System.EventHandler(this.textBox43_TextChanged);
+            this.txtBillNumber.TabIndex = 285;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
-            this.label18.Location = new System.Drawing.Point(647, 162);
+            this.label18.Location = new System.Drawing.Point(794, 155);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(81, 29);
-            this.label18.TabIndex = 94;
+            this.label18.TabIndex = 215;
             this.label18.Text = "السعر";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1044,21 +1051,21 @@ namespace AutoCare
             this.txtTotalPriceAfterDiscound.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtTotalPriceAfterDiscound.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtTotalPriceAfterDiscound.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtTotalPriceAfterDiscound.Location = new System.Drawing.Point(240, 748);
+            this.txtTotalPriceAfterDiscound.Location = new System.Drawing.Point(387, 741);
             this.txtTotalPriceAfterDiscound.Name = "txtTotalPriceAfterDiscound";
             this.txtTotalPriceAfterDiscound.ReadOnly = true;
             this.txtTotalPriceAfterDiscound.Size = new System.Drawing.Size(115, 36);
-            this.txtTotalPriceAfterDiscound.TabIndex = 164;
+            this.txtTotalPriceAfterDiscound.TabIndex = 284;
             this.txtTotalPriceAfterDiscound.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
-            this.label17.Location = new System.Drawing.Point(522, 162);
+            this.label17.Location = new System.Drawing.Point(669, 155);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(83, 29);
-            this.label17.TabIndex = 95;
+            this.label17.TabIndex = 216;
             this.label17.Text = "الكمية";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1067,10 +1074,10 @@ namespace AutoCare
             this.textBox37.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox37.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.textBox37.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBox37.Location = new System.Drawing.Point(367, 748);
+            this.textBox37.Location = new System.Drawing.Point(514, 741);
             this.textBox37.Name = "textBox37";
             this.textBox37.Size = new System.Drawing.Size(192, 36);
-            this.textBox37.TabIndex = 163;
+            this.textBox37.TabIndex = 283;
             this.textBox37.Text = "اجمالي بعد الخصم";
             this.textBox37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1078,10 +1085,10 @@ namespace AutoCare
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
-            this.label16.Location = new System.Drawing.Point(235, 162);
+            this.label16.Location = new System.Drawing.Point(382, 155);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(113, 29);
-            this.label16.TabIndex = 96;
+            this.label16.TabIndex = 217;
             this.label16.Text = "الاجمالي";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1090,10 +1097,10 @@ namespace AutoCare
             this.txtDiscound.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtDiscound.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtDiscound.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtDiscound.Location = new System.Drawing.Point(565, 748);
+            this.txtDiscound.Location = new System.Drawing.Point(712, 741);
             this.txtDiscound.Name = "txtDiscound";
             this.txtDiscound.Size = new System.Drawing.Size(62, 36);
-            this.txtDiscound.TabIndex = 162;
+            this.txtDiscound.TabIndex = 282;
             this.txtDiscound.Text = "0";
             this.txtDiscound.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1101,10 +1108,10 @@ namespace AutoCare
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
-            this.label15.Location = new System.Drawing.Point(391, 168);
+            this.label15.Location = new System.Drawing.Point(538, 161);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(80, 29);
-            this.label15.TabIndex = 97;
+            this.label15.TabIndex = 218;
             this.label15.Text = "تركيب";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1113,10 +1120,10 @@ namespace AutoCare
             this.textBox39.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox39.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.textBox39.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBox39.Location = new System.Drawing.Point(633, 748);
+            this.textBox39.Location = new System.Drawing.Point(780, 741);
             this.textBox39.Name = "textBox39";
             this.textBox39.Size = new System.Drawing.Size(166, 36);
-            this.textBox39.TabIndex = 161;
+            this.textBox39.TabIndex = 281;
             this.textBox39.Text = " % نسبة الخصم ";
             this.textBox39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1125,22 +1132,21 @@ namespace AutoCare
             this.txtQuantity3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtQuantity3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtQuantity3.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtQuantity3.Location = new System.Drawing.Point(502, 286);
+            this.txtQuantity3.Location = new System.Drawing.Point(649, 279);
             this.txtQuantity3.Name = "txtQuantity3";
             this.txtQuantity3.Size = new System.Drawing.Size(116, 36);
-            this.txtQuantity3.TabIndex = 104;
-            this.txtQuantity3.TextChanged += new System.EventHandler(this.txtQuantity3_TextChanged);
+            this.txtQuantity3.TabIndex = 224;
             // 
             // txtTotalPrice
             // 
             this.txtTotalPrice.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtTotalPrice.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtTotalPrice.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtTotalPrice.Location = new System.Drawing.Point(805, 748);
+            this.txtTotalPrice.Location = new System.Drawing.Point(952, 741);
             this.txtTotalPrice.Name = "txtTotalPrice";
             this.txtTotalPrice.ReadOnly = true;
             this.txtTotalPrice.Size = new System.Drawing.Size(105, 36);
-            this.txtTotalPrice.TabIndex = 160;
+            this.txtTotalPrice.TabIndex = 280;
             this.txtTotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // cbPrice3
@@ -1151,10 +1157,10 @@ namespace AutoCare
             this.cbPrice3.DisplayMember = "itemPrice";
             this.cbPrice3.Font = new System.Drawing.Font("Tahoma", 14F);
             this.cbPrice3.FormattingEnabled = true;
-            this.cbPrice3.Location = new System.Drawing.Point(624, 286);
+            this.cbPrice3.Location = new System.Drawing.Point(771, 279);
             this.cbPrice3.Name = "cbPrice3";
             this.cbPrice3.Size = new System.Drawing.Size(114, 36);
-            this.cbPrice3.TabIndex = 105;
+            this.cbPrice3.TabIndex = 225;
             this.cbPrice3.ValueMember = "itemPrice";
             // 
             // textBox42
@@ -1162,10 +1168,10 @@ namespace AutoCare
             this.textBox42.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox42.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.textBox42.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBox42.Location = new System.Drawing.Point(916, 748);
+            this.textBox42.Location = new System.Drawing.Point(1063, 741);
             this.textBox42.Name = "textBox42";
             this.textBox42.Size = new System.Drawing.Size(204, 36);
-            this.textBox42.TabIndex = 159;
+            this.textBox42.TabIndex = 279;
             this.textBox42.Text = "الاجمالي قبل الخصم";
             this.textBox42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1177,10 +1183,10 @@ namespace AutoCare
             this.comboItm3.DisplayMember = "itemName";
             this.comboItm3.Font = new System.Drawing.Font("Tahoma", 14F);
             this.comboItm3.FormattingEnabled = true;
-            this.comboItm3.Location = new System.Drawing.Point(744, 286);
+            this.comboItm3.Location = new System.Drawing.Point(891, 279);
             this.comboItm3.Name = "comboItm3";
             this.comboItm3.Size = new System.Drawing.Size(277, 36);
-            this.comboItm3.TabIndex = 106;
+            this.comboItm3.TabIndex = 226;
             this.comboItm3.ValueMember = "itemID";
             // 
             // txtTotal12
@@ -1188,44 +1194,42 @@ namespace AutoCare
             this.txtTotal12.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtTotal12.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtTotal12.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtTotal12.Location = new System.Drawing.Point(240, 664);
+            this.txtTotal12.Location = new System.Drawing.Point(387, 657);
             this.txtTotal12.Name = "txtTotal12";
             this.txtTotal12.ReadOnly = true;
             this.txtTotal12.Size = new System.Drawing.Size(115, 36);
-            this.txtTotal12.TabIndex = 158;
+            this.txtTotal12.TabIndex = 278;
             // 
             // txtMaintenanceFees3
             // 
             this.txtMaintenanceFees3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtMaintenanceFees3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtMaintenanceFees3.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtMaintenanceFees3.Location = new System.Drawing.Point(367, 286);
+            this.txtMaintenanceFees3.Location = new System.Drawing.Point(514, 279);
             this.txtMaintenanceFees3.Name = "txtMaintenanceFees3";
             this.txtMaintenanceFees3.Size = new System.Drawing.Size(128, 36);
-            this.txtMaintenanceFees3.TabIndex = 107;
-            this.txtMaintenanceFees3.TextChanged += new System.EventHandler(this.txtMaintenanceFees3_TextChanged);
+            this.txtMaintenanceFees3.TabIndex = 227;
             // 
             // txtMaintenanceFees12
             // 
             this.txtMaintenanceFees12.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtMaintenanceFees12.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtMaintenanceFees12.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtMaintenanceFees12.Location = new System.Drawing.Point(367, 664);
+            this.txtMaintenanceFees12.Location = new System.Drawing.Point(514, 657);
             this.txtMaintenanceFees12.Name = "txtMaintenanceFees12";
             this.txtMaintenanceFees12.Size = new System.Drawing.Size(128, 36);
-            this.txtMaintenanceFees12.TabIndex = 157;
-            this.txtMaintenanceFees12.TextChanged += new System.EventHandler(this.txtMaintenanceFees12_TextChanged);
+            this.txtMaintenanceFees12.TabIndex = 277;
             // 
             // txtTotal3
             // 
             this.txtTotal3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtTotal3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtTotal3.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtTotal3.Location = new System.Drawing.Point(240, 286);
+            this.txtTotal3.Location = new System.Drawing.Point(387, 279);
             this.txtTotal3.Name = "txtTotal3";
             this.txtTotal3.ReadOnly = true;
             this.txtTotal3.Size = new System.Drawing.Size(115, 36);
-            this.txtTotal3.TabIndex = 108;
+            this.txtTotal3.TabIndex = 228;
             // 
             // comboItm12
             // 
@@ -1235,10 +1239,10 @@ namespace AutoCare
             this.comboItm12.DisplayMember = "itemName";
             this.comboItm12.Font = new System.Drawing.Font("Tahoma", 14F);
             this.comboItm12.FormattingEnabled = true;
-            this.comboItm12.Location = new System.Drawing.Point(744, 664);
+            this.comboItm12.Location = new System.Drawing.Point(891, 657);
             this.comboItm12.Name = "comboItm12";
             this.comboItm12.Size = new System.Drawing.Size(277, 36);
-            this.comboItm12.TabIndex = 156;
+            this.comboItm12.TabIndex = 276;
             this.comboItm12.ValueMember = "itemID";
             // 
             // txtQuantity2
@@ -1246,11 +1250,10 @@ namespace AutoCare
             this.txtQuantity2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtQuantity2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtQuantity2.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtQuantity2.Location = new System.Drawing.Point(502, 244);
+            this.txtQuantity2.Location = new System.Drawing.Point(649, 237);
             this.txtQuantity2.Name = "txtQuantity2";
             this.txtQuantity2.Size = new System.Drawing.Size(116, 36);
-            this.txtQuantity2.TabIndex = 109;
-            this.txtQuantity2.TextChanged += new System.EventHandler(this.txtQuantity2_TextChanged);
+            this.txtQuantity2.TabIndex = 229;
             // 
             // cbPrice12
             // 
@@ -1260,10 +1263,10 @@ namespace AutoCare
             this.cbPrice12.DisplayMember = "itemPrice";
             this.cbPrice12.Font = new System.Drawing.Font("Tahoma", 14F);
             this.cbPrice12.FormattingEnabled = true;
-            this.cbPrice12.Location = new System.Drawing.Point(624, 664);
+            this.cbPrice12.Location = new System.Drawing.Point(771, 657);
             this.cbPrice12.Name = "cbPrice12";
             this.cbPrice12.Size = new System.Drawing.Size(114, 36);
-            this.cbPrice12.TabIndex = 155;
+            this.cbPrice12.TabIndex = 275;
             this.cbPrice12.ValueMember = "itemPrice";
             // 
             // cbPrice2
@@ -1274,10 +1277,10 @@ namespace AutoCare
             this.cbPrice2.DisplayMember = "itemPrice";
             this.cbPrice2.Font = new System.Drawing.Font("Tahoma", 14F);
             this.cbPrice2.FormattingEnabled = true;
-            this.cbPrice2.Location = new System.Drawing.Point(624, 244);
+            this.cbPrice2.Location = new System.Drawing.Point(771, 237);
             this.cbPrice2.Name = "cbPrice2";
             this.cbPrice2.Size = new System.Drawing.Size(114, 36);
-            this.cbPrice2.TabIndex = 110;
+            this.cbPrice2.TabIndex = 230;
             this.cbPrice2.ValueMember = "itemPrice";
             // 
             // txtQuantity12
@@ -1285,11 +1288,10 @@ namespace AutoCare
             this.txtQuantity12.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtQuantity12.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtQuantity12.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtQuantity12.Location = new System.Drawing.Point(502, 664);
+            this.txtQuantity12.Location = new System.Drawing.Point(649, 657);
             this.txtQuantity12.Name = "txtQuantity12";
             this.txtQuantity12.Size = new System.Drawing.Size(116, 36);
-            this.txtQuantity12.TabIndex = 154;
-            this.txtQuantity12.TextChanged += new System.EventHandler(this.txtQuantity12_TextChanged);
+            this.txtQuantity12.TabIndex = 274;
             // 
             // comboItm2
             // 
@@ -1299,56 +1301,53 @@ namespace AutoCare
             this.comboItm2.DisplayMember = "itemName";
             this.comboItm2.Font = new System.Drawing.Font("Tahoma", 14F);
             this.comboItm2.FormattingEnabled = true;
-            this.comboItm2.Location = new System.Drawing.Point(744, 244);
+            this.comboItm2.Location = new System.Drawing.Point(891, 237);
             this.comboItm2.Name = "comboItm2";
             this.comboItm2.Size = new System.Drawing.Size(277, 36);
-            this.comboItm2.TabIndex = 111;
+            this.comboItm2.TabIndex = 231;
             this.comboItm2.ValueMember = "itemID";
-            this.comboItm2.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // txtTotal11
             // 
             this.txtTotal11.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtTotal11.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtTotal11.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtTotal11.Location = new System.Drawing.Point(240, 622);
+            this.txtTotal11.Location = new System.Drawing.Point(387, 615);
             this.txtTotal11.Name = "txtTotal11";
             this.txtTotal11.ReadOnly = true;
             this.txtTotal11.Size = new System.Drawing.Size(115, 36);
-            this.txtTotal11.TabIndex = 153;
+            this.txtTotal11.TabIndex = 273;
             // 
             // txtMaintenanceFees2
             // 
             this.txtMaintenanceFees2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtMaintenanceFees2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtMaintenanceFees2.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtMaintenanceFees2.Location = new System.Drawing.Point(367, 244);
+            this.txtMaintenanceFees2.Location = new System.Drawing.Point(514, 237);
             this.txtMaintenanceFees2.Name = "txtMaintenanceFees2";
             this.txtMaintenanceFees2.Size = new System.Drawing.Size(128, 36);
-            this.txtMaintenanceFees2.TabIndex = 112;
-            this.txtMaintenanceFees2.TextChanged += new System.EventHandler(this.txtMaintenanceFees2_TextChanged);
+            this.txtMaintenanceFees2.TabIndex = 232;
             // 
             // txtMaintenanceFees11
             // 
             this.txtMaintenanceFees11.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtMaintenanceFees11.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtMaintenanceFees11.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtMaintenanceFees11.Location = new System.Drawing.Point(367, 622);
+            this.txtMaintenanceFees11.Location = new System.Drawing.Point(514, 615);
             this.txtMaintenanceFees11.Name = "txtMaintenanceFees11";
             this.txtMaintenanceFees11.Size = new System.Drawing.Size(128, 36);
-            this.txtMaintenanceFees11.TabIndex = 152;
-            this.txtMaintenanceFees11.TextChanged += new System.EventHandler(this.txtMaintenanceFees11_TextChanged);
+            this.txtMaintenanceFees11.TabIndex = 272;
             // 
             // txtTotal2
             // 
             this.txtTotal2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtTotal2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtTotal2.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtTotal2.Location = new System.Drawing.Point(240, 244);
+            this.txtTotal2.Location = new System.Drawing.Point(387, 237);
             this.txtTotal2.Name = "txtTotal2";
             this.txtTotal2.ReadOnly = true;
             this.txtTotal2.Size = new System.Drawing.Size(115, 36);
-            this.txtTotal2.TabIndex = 113;
+            this.txtTotal2.TabIndex = 233;
             // 
             // comboItm11
             // 
@@ -1358,10 +1357,10 @@ namespace AutoCare
             this.comboItm11.DisplayMember = "itemName";
             this.comboItm11.Font = new System.Drawing.Font("Tahoma", 14F);
             this.comboItm11.FormattingEnabled = true;
-            this.comboItm11.Location = new System.Drawing.Point(744, 622);
+            this.comboItm11.Location = new System.Drawing.Point(891, 615);
             this.comboItm11.Name = "comboItm11";
             this.comboItm11.Size = new System.Drawing.Size(277, 36);
-            this.comboItm11.TabIndex = 151;
+            this.comboItm11.TabIndex = 271;
             this.comboItm11.ValueMember = "itemID";
             // 
             // txtQuantity4
@@ -1369,11 +1368,10 @@ namespace AutoCare
             this.txtQuantity4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtQuantity4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtQuantity4.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtQuantity4.Location = new System.Drawing.Point(502, 328);
+            this.txtQuantity4.Location = new System.Drawing.Point(649, 321);
             this.txtQuantity4.Name = "txtQuantity4";
             this.txtQuantity4.Size = new System.Drawing.Size(116, 36);
-            this.txtQuantity4.TabIndex = 114;
-            this.txtQuantity4.TextChanged += new System.EventHandler(this.txtQuantity4_TextChanged);
+            this.txtQuantity4.TabIndex = 234;
             // 
             // cbPrice11
             // 
@@ -1383,10 +1381,10 @@ namespace AutoCare
             this.cbPrice11.DisplayMember = "itemPrice";
             this.cbPrice11.Font = new System.Drawing.Font("Tahoma", 14F);
             this.cbPrice11.FormattingEnabled = true;
-            this.cbPrice11.Location = new System.Drawing.Point(624, 622);
+            this.cbPrice11.Location = new System.Drawing.Point(771, 615);
             this.cbPrice11.Name = "cbPrice11";
             this.cbPrice11.Size = new System.Drawing.Size(114, 36);
-            this.cbPrice11.TabIndex = 150;
+            this.cbPrice11.TabIndex = 270;
             this.cbPrice11.ValueMember = "itemPrice";
             // 
             // cbPrice4
@@ -1397,10 +1395,10 @@ namespace AutoCare
             this.cbPrice4.DisplayMember = "itemPrice";
             this.cbPrice4.Font = new System.Drawing.Font("Tahoma", 14F);
             this.cbPrice4.FormattingEnabled = true;
-            this.cbPrice4.Location = new System.Drawing.Point(624, 328);
+            this.cbPrice4.Location = new System.Drawing.Point(771, 321);
             this.cbPrice4.Name = "cbPrice4";
             this.cbPrice4.Size = new System.Drawing.Size(114, 36);
-            this.cbPrice4.TabIndex = 115;
+            this.cbPrice4.TabIndex = 235;
             this.cbPrice4.ValueMember = "itemPrice";
             // 
             // txtQuantity11
@@ -1408,11 +1406,10 @@ namespace AutoCare
             this.txtQuantity11.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtQuantity11.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtQuantity11.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtQuantity11.Location = new System.Drawing.Point(502, 622);
+            this.txtQuantity11.Location = new System.Drawing.Point(649, 615);
             this.txtQuantity11.Name = "txtQuantity11";
             this.txtQuantity11.Size = new System.Drawing.Size(116, 36);
-            this.txtQuantity11.TabIndex = 149;
-            this.txtQuantity11.TextChanged += new System.EventHandler(this.txtQuantity11_TextChanged);
+            this.txtQuantity11.TabIndex = 269;
             // 
             // comboItm4
             // 
@@ -1422,10 +1419,10 @@ namespace AutoCare
             this.comboItm4.DisplayMember = "itemName";
             this.comboItm4.Font = new System.Drawing.Font("Tahoma", 14F);
             this.comboItm4.FormattingEnabled = true;
-            this.comboItm4.Location = new System.Drawing.Point(744, 328);
+            this.comboItm4.Location = new System.Drawing.Point(891, 321);
             this.comboItm4.Name = "comboItm4";
             this.comboItm4.Size = new System.Drawing.Size(277, 36);
-            this.comboItm4.TabIndex = 116;
+            this.comboItm4.TabIndex = 236;
             this.comboItm4.ValueMember = "itemID";
             // 
             // txtTotal10
@@ -1433,44 +1430,42 @@ namespace AutoCare
             this.txtTotal10.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtTotal10.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtTotal10.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtTotal10.Location = new System.Drawing.Point(240, 580);
+            this.txtTotal10.Location = new System.Drawing.Point(387, 573);
             this.txtTotal10.Name = "txtTotal10";
             this.txtTotal10.ReadOnly = true;
             this.txtTotal10.Size = new System.Drawing.Size(115, 36);
-            this.txtTotal10.TabIndex = 148;
+            this.txtTotal10.TabIndex = 268;
             // 
             // txtMaintenanceFees4
             // 
             this.txtMaintenanceFees4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtMaintenanceFees4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtMaintenanceFees4.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtMaintenanceFees4.Location = new System.Drawing.Point(367, 328);
+            this.txtMaintenanceFees4.Location = new System.Drawing.Point(514, 321);
             this.txtMaintenanceFees4.Name = "txtMaintenanceFees4";
             this.txtMaintenanceFees4.Size = new System.Drawing.Size(128, 36);
-            this.txtMaintenanceFees4.TabIndex = 117;
-            this.txtMaintenanceFees4.TextChanged += new System.EventHandler(this.txtMaintenanceFees4_TextChanged);
+            this.txtMaintenanceFees4.TabIndex = 237;
             // 
             // txtMaintenanceFees10
             // 
             this.txtMaintenanceFees10.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtMaintenanceFees10.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtMaintenanceFees10.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtMaintenanceFees10.Location = new System.Drawing.Point(367, 580);
+            this.txtMaintenanceFees10.Location = new System.Drawing.Point(514, 573);
             this.txtMaintenanceFees10.Name = "txtMaintenanceFees10";
             this.txtMaintenanceFees10.Size = new System.Drawing.Size(128, 36);
-            this.txtMaintenanceFees10.TabIndex = 147;
-            this.txtMaintenanceFees10.TextChanged += new System.EventHandler(this.txtMaintenanceFees10_TextChanged);
+            this.txtMaintenanceFees10.TabIndex = 267;
             // 
             // txtTotal4
             // 
             this.txtTotal4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtTotal4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtTotal4.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtTotal4.Location = new System.Drawing.Point(240, 328);
+            this.txtTotal4.Location = new System.Drawing.Point(387, 321);
             this.txtTotal4.Name = "txtTotal4";
             this.txtTotal4.ReadOnly = true;
             this.txtTotal4.Size = new System.Drawing.Size(115, 36);
-            this.txtTotal4.TabIndex = 118;
+            this.txtTotal4.TabIndex = 238;
             // 
             // comboItm10
             // 
@@ -1480,10 +1475,10 @@ namespace AutoCare
             this.comboItm10.DisplayMember = "itemName";
             this.comboItm10.Font = new System.Drawing.Font("Tahoma", 14F);
             this.comboItm10.FormattingEnabled = true;
-            this.comboItm10.Location = new System.Drawing.Point(744, 580);
+            this.comboItm10.Location = new System.Drawing.Point(891, 573);
             this.comboItm10.Name = "comboItm10";
             this.comboItm10.Size = new System.Drawing.Size(277, 36);
-            this.comboItm10.TabIndex = 146;
+            this.comboItm10.TabIndex = 266;
             this.comboItm10.ValueMember = "itemID";
             // 
             // txtQuantity5
@@ -1491,11 +1486,10 @@ namespace AutoCare
             this.txtQuantity5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtQuantity5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtQuantity5.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtQuantity5.Location = new System.Drawing.Point(502, 370);
+            this.txtQuantity5.Location = new System.Drawing.Point(649, 363);
             this.txtQuantity5.Name = "txtQuantity5";
             this.txtQuantity5.Size = new System.Drawing.Size(116, 36);
-            this.txtQuantity5.TabIndex = 119;
-            this.txtQuantity5.TextChanged += new System.EventHandler(this.txtQuantity5_TextChanged);
+            this.txtQuantity5.TabIndex = 239;
             // 
             // cbPrice10
             // 
@@ -1505,10 +1499,10 @@ namespace AutoCare
             this.cbPrice10.DisplayMember = "itemPrice";
             this.cbPrice10.Font = new System.Drawing.Font("Tahoma", 14F);
             this.cbPrice10.FormattingEnabled = true;
-            this.cbPrice10.Location = new System.Drawing.Point(624, 580);
+            this.cbPrice10.Location = new System.Drawing.Point(771, 573);
             this.cbPrice10.Name = "cbPrice10";
             this.cbPrice10.Size = new System.Drawing.Size(114, 36);
-            this.cbPrice10.TabIndex = 145;
+            this.cbPrice10.TabIndex = 265;
             this.cbPrice10.ValueMember = "itemPrice";
             // 
             // cbPrice5
@@ -1519,10 +1513,10 @@ namespace AutoCare
             this.cbPrice5.DisplayMember = "itemPrice";
             this.cbPrice5.Font = new System.Drawing.Font("Tahoma", 14F);
             this.cbPrice5.FormattingEnabled = true;
-            this.cbPrice5.Location = new System.Drawing.Point(624, 370);
+            this.cbPrice5.Location = new System.Drawing.Point(771, 363);
             this.cbPrice5.Name = "cbPrice5";
             this.cbPrice5.Size = new System.Drawing.Size(114, 36);
-            this.cbPrice5.TabIndex = 120;
+            this.cbPrice5.TabIndex = 240;
             this.cbPrice5.ValueMember = "itemPrice";
             // 
             // txtQuantity10
@@ -1530,11 +1524,10 @@ namespace AutoCare
             this.txtQuantity10.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtQuantity10.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtQuantity10.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtQuantity10.Location = new System.Drawing.Point(502, 580);
+            this.txtQuantity10.Location = new System.Drawing.Point(649, 573);
             this.txtQuantity10.Name = "txtQuantity10";
             this.txtQuantity10.Size = new System.Drawing.Size(116, 36);
-            this.txtQuantity10.TabIndex = 144;
-            this.txtQuantity10.TextChanged += new System.EventHandler(this.txtQuantity10_TextChanged);
+            this.txtQuantity10.TabIndex = 264;
             // 
             // comboItm5
             // 
@@ -1544,10 +1537,10 @@ namespace AutoCare
             this.comboItm5.DisplayMember = "itemName";
             this.comboItm5.Font = new System.Drawing.Font("Tahoma", 14F);
             this.comboItm5.FormattingEnabled = true;
-            this.comboItm5.Location = new System.Drawing.Point(744, 370);
+            this.comboItm5.Location = new System.Drawing.Point(891, 363);
             this.comboItm5.Name = "comboItm5";
             this.comboItm5.Size = new System.Drawing.Size(277, 36);
-            this.comboItm5.TabIndex = 121;
+            this.comboItm5.TabIndex = 241;
             this.comboItm5.ValueMember = "itemID";
             // 
             // txtTotal9
@@ -1555,44 +1548,42 @@ namespace AutoCare
             this.txtTotal9.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtTotal9.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtTotal9.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtTotal9.Location = new System.Drawing.Point(240, 538);
+            this.txtTotal9.Location = new System.Drawing.Point(387, 531);
             this.txtTotal9.Name = "txtTotal9";
             this.txtTotal9.ReadOnly = true;
             this.txtTotal9.Size = new System.Drawing.Size(115, 36);
-            this.txtTotal9.TabIndex = 143;
+            this.txtTotal9.TabIndex = 263;
             // 
             // txtMaintenanceFees5
             // 
             this.txtMaintenanceFees5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtMaintenanceFees5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtMaintenanceFees5.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtMaintenanceFees5.Location = new System.Drawing.Point(367, 370);
+            this.txtMaintenanceFees5.Location = new System.Drawing.Point(514, 363);
             this.txtMaintenanceFees5.Name = "txtMaintenanceFees5";
             this.txtMaintenanceFees5.Size = new System.Drawing.Size(128, 36);
-            this.txtMaintenanceFees5.TabIndex = 122;
-            this.txtMaintenanceFees5.TextChanged += new System.EventHandler(this.txtMaintenanceFees5_TextChanged);
+            this.txtMaintenanceFees5.TabIndex = 242;
             // 
             // txtMaintenanceFees9
             // 
             this.txtMaintenanceFees9.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtMaintenanceFees9.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtMaintenanceFees9.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtMaintenanceFees9.Location = new System.Drawing.Point(367, 538);
+            this.txtMaintenanceFees9.Location = new System.Drawing.Point(514, 531);
             this.txtMaintenanceFees9.Name = "txtMaintenanceFees9";
             this.txtMaintenanceFees9.Size = new System.Drawing.Size(128, 36);
-            this.txtMaintenanceFees9.TabIndex = 142;
-            this.txtMaintenanceFees9.TextChanged += new System.EventHandler(this.txtMaintenanceFees9_TextChanged);
+            this.txtMaintenanceFees9.TabIndex = 262;
             // 
             // txtTotal5
             // 
             this.txtTotal5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtTotal5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtTotal5.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtTotal5.Location = new System.Drawing.Point(240, 370);
+            this.txtTotal5.Location = new System.Drawing.Point(387, 363);
             this.txtTotal5.Name = "txtTotal5";
             this.txtTotal5.ReadOnly = true;
             this.txtTotal5.Size = new System.Drawing.Size(115, 36);
-            this.txtTotal5.TabIndex = 123;
+            this.txtTotal5.TabIndex = 243;
             // 
             // comboItm9
             // 
@@ -1602,10 +1593,10 @@ namespace AutoCare
             this.comboItm9.DisplayMember = "itemName";
             this.comboItm9.Font = new System.Drawing.Font("Tahoma", 14F);
             this.comboItm9.FormattingEnabled = true;
-            this.comboItm9.Location = new System.Drawing.Point(744, 538);
+            this.comboItm9.Location = new System.Drawing.Point(891, 531);
             this.comboItm9.Name = "comboItm9";
             this.comboItm9.Size = new System.Drawing.Size(277, 36);
-            this.comboItm9.TabIndex = 141;
+            this.comboItm9.TabIndex = 261;
             this.comboItm9.ValueMember = "itemID";
             // 
             // txtQuantity6
@@ -1613,11 +1604,10 @@ namespace AutoCare
             this.txtQuantity6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtQuantity6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtQuantity6.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtQuantity6.Location = new System.Drawing.Point(502, 412);
+            this.txtQuantity6.Location = new System.Drawing.Point(649, 405);
             this.txtQuantity6.Name = "txtQuantity6";
             this.txtQuantity6.Size = new System.Drawing.Size(116, 36);
-            this.txtQuantity6.TabIndex = 124;
-            this.txtQuantity6.TextChanged += new System.EventHandler(this.txtQuantity6_TextChanged);
+            this.txtQuantity6.TabIndex = 244;
             // 
             // cbPrice9
             // 
@@ -1627,10 +1617,10 @@ namespace AutoCare
             this.cbPrice9.DisplayMember = "itemPrice";
             this.cbPrice9.Font = new System.Drawing.Font("Tahoma", 14F);
             this.cbPrice9.FormattingEnabled = true;
-            this.cbPrice9.Location = new System.Drawing.Point(624, 538);
+            this.cbPrice9.Location = new System.Drawing.Point(771, 531);
             this.cbPrice9.Name = "cbPrice9";
             this.cbPrice9.Size = new System.Drawing.Size(114, 36);
-            this.cbPrice9.TabIndex = 140;
+            this.cbPrice9.TabIndex = 260;
             this.cbPrice9.ValueMember = "itemPrice";
             // 
             // cbPrice6
@@ -1641,10 +1631,10 @@ namespace AutoCare
             this.cbPrice6.DisplayMember = "itemPrice";
             this.cbPrice6.Font = new System.Drawing.Font("Tahoma", 14F);
             this.cbPrice6.FormattingEnabled = true;
-            this.cbPrice6.Location = new System.Drawing.Point(624, 412);
+            this.cbPrice6.Location = new System.Drawing.Point(771, 405);
             this.cbPrice6.Name = "cbPrice6";
             this.cbPrice6.Size = new System.Drawing.Size(114, 36);
-            this.cbPrice6.TabIndex = 125;
+            this.cbPrice6.TabIndex = 245;
             this.cbPrice6.ValueMember = "itemPrice";
             // 
             // txtQuantity9
@@ -1652,11 +1642,10 @@ namespace AutoCare
             this.txtQuantity9.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtQuantity9.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtQuantity9.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtQuantity9.Location = new System.Drawing.Point(502, 538);
+            this.txtQuantity9.Location = new System.Drawing.Point(649, 531);
             this.txtQuantity9.Name = "txtQuantity9";
             this.txtQuantity9.Size = new System.Drawing.Size(116, 36);
-            this.txtQuantity9.TabIndex = 139;
-            this.txtQuantity9.TextChanged += new System.EventHandler(this.txtQuantity9_TextChanged);
+            this.txtQuantity9.TabIndex = 259;
             // 
             // comboItm6
             // 
@@ -1666,56 +1655,53 @@ namespace AutoCare
             this.comboItm6.DisplayMember = "itemName";
             this.comboItm6.Font = new System.Drawing.Font("Tahoma", 14F);
             this.comboItm6.FormattingEnabled = true;
-            this.comboItm6.Location = new System.Drawing.Point(744, 412);
+            this.comboItm6.Location = new System.Drawing.Point(891, 405);
             this.comboItm6.Name = "comboItm6";
             this.comboItm6.Size = new System.Drawing.Size(277, 36);
-            this.comboItm6.TabIndex = 126;
+            this.comboItm6.TabIndex = 246;
             this.comboItm6.ValueMember = "itemID";
-            this.comboItm6.SelectedIndexChanged += new System.EventHandler(this.comboBox11_SelectedIndexChanged);
             // 
             // txtTotal8
             // 
             this.txtTotal8.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtTotal8.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtTotal8.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtTotal8.Location = new System.Drawing.Point(240, 496);
+            this.txtTotal8.Location = new System.Drawing.Point(387, 489);
             this.txtTotal8.Name = "txtTotal8";
             this.txtTotal8.ReadOnly = true;
             this.txtTotal8.Size = new System.Drawing.Size(115, 36);
-            this.txtTotal8.TabIndex = 138;
+            this.txtTotal8.TabIndex = 258;
             // 
             // txtMaintenanceFees6
             // 
             this.txtMaintenanceFees6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtMaintenanceFees6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtMaintenanceFees6.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtMaintenanceFees6.Location = new System.Drawing.Point(367, 412);
+            this.txtMaintenanceFees6.Location = new System.Drawing.Point(514, 405);
             this.txtMaintenanceFees6.Name = "txtMaintenanceFees6";
             this.txtMaintenanceFees6.Size = new System.Drawing.Size(128, 36);
-            this.txtMaintenanceFees6.TabIndex = 127;
-            this.txtMaintenanceFees6.TextChanged += new System.EventHandler(this.txtMaintenanceFees6_TextChanged);
+            this.txtMaintenanceFees6.TabIndex = 247;
             // 
             // txtMaintenanceFees8
             // 
             this.txtMaintenanceFees8.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtMaintenanceFees8.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtMaintenanceFees8.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtMaintenanceFees8.Location = new System.Drawing.Point(367, 496);
+            this.txtMaintenanceFees8.Location = new System.Drawing.Point(514, 489);
             this.txtMaintenanceFees8.Name = "txtMaintenanceFees8";
             this.txtMaintenanceFees8.Size = new System.Drawing.Size(128, 36);
-            this.txtMaintenanceFees8.TabIndex = 137;
-            this.txtMaintenanceFees8.TextChanged += new System.EventHandler(this.txtMaintenanceFees8_TextChanged);
+            this.txtMaintenanceFees8.TabIndex = 257;
             // 
             // txtTotal6
             // 
             this.txtTotal6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtTotal6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtTotal6.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtTotal6.Location = new System.Drawing.Point(240, 412);
+            this.txtTotal6.Location = new System.Drawing.Point(387, 405);
             this.txtTotal6.Name = "txtTotal6";
             this.txtTotal6.ReadOnly = true;
             this.txtTotal6.Size = new System.Drawing.Size(115, 36);
-            this.txtTotal6.TabIndex = 128;
+            this.txtTotal6.TabIndex = 248;
             // 
             // comboItm8
             // 
@@ -1725,10 +1711,10 @@ namespace AutoCare
             this.comboItm8.DisplayMember = "itemName";
             this.comboItm8.Font = new System.Drawing.Font("Tahoma", 14F);
             this.comboItm8.FormattingEnabled = true;
-            this.comboItm8.Location = new System.Drawing.Point(744, 496);
+            this.comboItm8.Location = new System.Drawing.Point(891, 489);
             this.comboItm8.Name = "comboItm8";
             this.comboItm8.Size = new System.Drawing.Size(277, 36);
-            this.comboItm8.TabIndex = 136;
+            this.comboItm8.TabIndex = 256;
             this.comboItm8.ValueMember = "itemID";
             // 
             // txtQuantity7
@@ -1736,11 +1722,10 @@ namespace AutoCare
             this.txtQuantity7.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtQuantity7.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtQuantity7.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtQuantity7.Location = new System.Drawing.Point(502, 454);
+            this.txtQuantity7.Location = new System.Drawing.Point(649, 447);
             this.txtQuantity7.Name = "txtQuantity7";
             this.txtQuantity7.Size = new System.Drawing.Size(116, 36);
-            this.txtQuantity7.TabIndex = 129;
-            this.txtQuantity7.TextChanged += new System.EventHandler(this.txtQuantity7_TextChanged);
+            this.txtQuantity7.TabIndex = 249;
             // 
             // cbPrice8
             // 
@@ -1750,10 +1735,10 @@ namespace AutoCare
             this.cbPrice8.DisplayMember = "itemPrice";
             this.cbPrice8.Font = new System.Drawing.Font("Tahoma", 14F);
             this.cbPrice8.FormattingEnabled = true;
-            this.cbPrice8.Location = new System.Drawing.Point(624, 496);
+            this.cbPrice8.Location = new System.Drawing.Point(771, 489);
             this.cbPrice8.Name = "cbPrice8";
             this.cbPrice8.Size = new System.Drawing.Size(114, 36);
-            this.cbPrice8.TabIndex = 135;
+            this.cbPrice8.TabIndex = 255;
             this.cbPrice8.ValueMember = "itemPrice";
             // 
             // cbPrice7
@@ -1764,10 +1749,10 @@ namespace AutoCare
             this.cbPrice7.DisplayMember = "itemPrice";
             this.cbPrice7.Font = new System.Drawing.Font("Tahoma", 14F);
             this.cbPrice7.FormattingEnabled = true;
-            this.cbPrice7.Location = new System.Drawing.Point(624, 454);
+            this.cbPrice7.Location = new System.Drawing.Point(771, 447);
             this.cbPrice7.Name = "cbPrice7";
             this.cbPrice7.Size = new System.Drawing.Size(114, 36);
-            this.cbPrice7.TabIndex = 130;
+            this.cbPrice7.TabIndex = 250;
             this.cbPrice7.ValueMember = "itemPrice";
             // 
             // txtQuantity8
@@ -1775,11 +1760,10 @@ namespace AutoCare
             this.txtQuantity8.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtQuantity8.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtQuantity8.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtQuantity8.Location = new System.Drawing.Point(502, 496);
+            this.txtQuantity8.Location = new System.Drawing.Point(649, 489);
             this.txtQuantity8.Name = "txtQuantity8";
             this.txtQuantity8.Size = new System.Drawing.Size(116, 36);
-            this.txtQuantity8.TabIndex = 134;
-            this.txtQuantity8.TextChanged += new System.EventHandler(this.txtQuantity8_TextChanged);
+            this.txtQuantity8.TabIndex = 254;
             // 
             // comboItm7
             // 
@@ -1789,10 +1773,10 @@ namespace AutoCare
             this.comboItm7.DisplayMember = "itemName";
             this.comboItm7.Font = new System.Drawing.Font("Tahoma", 14F);
             this.comboItm7.FormattingEnabled = true;
-            this.comboItm7.Location = new System.Drawing.Point(744, 454);
+            this.comboItm7.Location = new System.Drawing.Point(891, 447);
             this.comboItm7.Name = "comboItm7";
             this.comboItm7.Size = new System.Drawing.Size(277, 36);
-            this.comboItm7.TabIndex = 131;
+            this.comboItm7.TabIndex = 251;
             this.comboItm7.ValueMember = "itemID";
             // 
             // txtTotal7
@@ -1800,22 +1784,21 @@ namespace AutoCare
             this.txtTotal7.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtTotal7.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtTotal7.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtTotal7.Location = new System.Drawing.Point(240, 454);
+            this.txtTotal7.Location = new System.Drawing.Point(387, 447);
             this.txtTotal7.Name = "txtTotal7";
             this.txtTotal7.ReadOnly = true;
             this.txtTotal7.Size = new System.Drawing.Size(115, 36);
-            this.txtTotal7.TabIndex = 133;
+            this.txtTotal7.TabIndex = 253;
             // 
             // txtMaintenanceFees7
             // 
             this.txtMaintenanceFees7.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtMaintenanceFees7.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtMaintenanceFees7.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.txtMaintenanceFees7.Location = new System.Drawing.Point(367, 454);
+            this.txtMaintenanceFees7.Location = new System.Drawing.Point(514, 447);
             this.txtMaintenanceFees7.Name = "txtMaintenanceFees7";
             this.txtMaintenanceFees7.Size = new System.Drawing.Size(128, 36);
-            this.txtMaintenanceFees7.TabIndex = 132;
-            this.txtMaintenanceFees7.TextChanged += new System.EventHandler(this.txtMaintenanceFees7_TextChanged);
+            this.txtMaintenanceFees7.TabIndex = 252;
             // 
             // ucMaintenanceBill
             // 
@@ -1859,7 +1842,9 @@ namespace AutoCare
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBillBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
+            this.panelControl1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1911,14 +1896,15 @@ namespace AutoCare
         private System.Windows.Forms.BindingSource itemBindingSource16;
         private System.Windows.Forms.BindingSource itemBindingSource17;
         private System.Windows.Forms.BindingSource itemBindingSource18;
-        private System.Windows.Forms.Button button1;
         private DevExpress.XtraBars.Ribbon.RibbonPageCategory ribbonPageCategory1;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Drawing.Printing.PrintDocument printDocument2;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
         private System.Windows.Forms.TextBox txtTotal1;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtCarBrand;
         private System.Windows.Forms.TextBox txtMaintenanceFees1;
         private System.Windows.Forms.TextBox txtCarModel;

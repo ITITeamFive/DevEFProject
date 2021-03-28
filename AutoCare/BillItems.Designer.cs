@@ -68,7 +68,7 @@ namespace AutoCare
             this.labelControl1.Location = new System.Drawing.Point(45, 15);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(163, 30);
+            this.labelControl1.Size = new System.Drawing.Size(171, 31);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Auto Care 180";
             this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
@@ -80,9 +80,9 @@ namespace AutoCare
             this.labelControl2.Location = new System.Drawing.Point(404, 15);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(145, 30);
+            this.labelControl2.Size = new System.Drawing.Size(117, 31);
             this.labelControl2.TabIndex = 1;
-            this.labelControl2.Text = "Supplier Bill";
+            this.labelControl2.Text = "فاتورة المورد";
             this.labelControl2.Click += new System.EventHandler(this.labelControl2_Click);
             // 
             // labelControl3
@@ -94,9 +94,9 @@ namespace AutoCare
             this.labelControl3.Location = new System.Drawing.Point(444, 64);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(43, 21);
+            this.labelControl3.Size = new System.Drawing.Size(45, 21);
             this.labelControl3.TabIndex = 2;
-            this.labelControl3.Text = "Bill #:";
+            this.labelControl3.Text = "فاتورة :";
             this.labelControl3.Click += new System.EventHandler(this.labelControl3_Click);
             // 
             // labelControl4
@@ -108,9 +108,9 @@ namespace AutoCare
             this.labelControl4.Location = new System.Drawing.Point(444, 100);
             this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(67, 21);
+            this.labelControl4.Size = new System.Drawing.Size(50, 21);
             this.labelControl4.TabIndex = 3;
-            this.labelControl4.Text = "Bill Date:";
+            this.labelControl4.Text = "التاريخ :";
             this.labelControl4.Click += new System.EventHandler(this.labelControl4_Click);
             // 
             // labelControl5
@@ -138,9 +138,9 @@ namespace AutoCare
             this.labelControl7.Location = new System.Drawing.Point(61, 143);
             this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(61, 22);
+            this.labelControl7.Size = new System.Drawing.Size(63, 22);
             this.labelControl7.TabIndex = 6;
-            this.labelControl7.Text = "Bill To:";
+            this.labelControl7.Text = "فاتورة الي";
             // 
             // labelControl8
             // 
@@ -151,9 +151,10 @@ namespace AutoCare
             this.labelControl8.Location = new System.Drawing.Point(61, 188);
             this.labelControl8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(66, 21);
+            this.labelControl8.Size = new System.Drawing.Size(42, 21);
             this.labelControl8.TabIndex = 7;
-            this.labelControl8.Text = "Supplier:";
+            this.labelControl8.Text = "المورد:";
+            this.labelControl8.Click += new System.EventHandler(this.labelControl8_Click);
             // 
             // labelControl9
             // 
@@ -164,9 +165,9 @@ namespace AutoCare
             this.labelControl9.Location = new System.Drawing.Point(58, 217);
             this.labelControl9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(67, 21);
+            this.labelControl9.Size = new System.Drawing.Size(51, 21);
             this.labelControl9.TabIndex = 8;
-            this.labelControl9.Text = "Address:";
+            this.labelControl9.Text = "العنوان :";
             // 
             // labelControl10
             // 
@@ -177,9 +178,9 @@ namespace AutoCare
             this.labelControl10.Location = new System.Drawing.Point(61, 245);
             this.labelControl10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(51, 21);
+            this.labelControl10.Size = new System.Drawing.Size(44, 21);
             this.labelControl10.TabIndex = 9;
-            this.labelControl10.Text = "Phone:";
+            this.labelControl10.Text = "التلفون:";
             // 
             // labelControl11
             // 
@@ -273,6 +274,7 @@ namespace AutoCare
             this.gridView1.AppearancePrint.GroupFooter.BackColor = System.Drawing.Color.White;
             this.gridView1.AppearancePrint.GroupFooter.Options.UseBackColor = true;
             this.gridView1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.gridView1.ColumnPanelRowHeight = 35;
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colitemID,
             this.colitemCost,
@@ -281,6 +283,7 @@ namespace AutoCare
             this.gridView1.DetailHeight = 431;
             this.gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.None;
             this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.GroupRowHeight = 35;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.AutoSelectAllInEditor = false;
             this.gridView1.OptionsMenu.DialogFormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.None;
@@ -293,10 +296,19 @@ namespace AutoCare
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.OptionsView.ShowHorizontalLines = DevExpress.Utils.DefaultBoolean.True;
             this.gridView1.OptionsView.ShowVerticalLines = DevExpress.Utils.DefaultBoolean.False;
+            this.gridView1.RowHeight = 35;
             // 
             // colitemID
             // 
-            this.colitemID.Caption = "Item";
+            this.colitemID.AppearanceCell.Options.UseTextOptions = true;
+            this.colitemID.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colitemID.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.colitemID.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.colitemID.AppearanceHeader.Options.UseFont = true;
+            this.colitemID.AppearanceHeader.Options.UseTextOptions = true;
+            this.colitemID.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colitemID.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.colitemID.Caption = "القطعة";
             this.colitemID.ColumnEdit = this.repositoryItemGridLookUpEdit1;
             this.colitemID.FieldName = "itemID";
             this.colitemID.MinWidth = 23;
@@ -331,7 +343,15 @@ namespace AutoCare
             // 
             // colitemCost
             // 
-            this.colitemCost.Caption = "Cost";
+            this.colitemCost.AppearanceCell.Options.UseTextOptions = true;
+            this.colitemCost.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colitemCost.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.colitemCost.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.colitemCost.AppearanceHeader.Options.UseFont = true;
+            this.colitemCost.AppearanceHeader.Options.UseTextOptions = true;
+            this.colitemCost.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colitemCost.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.colitemCost.Caption = "السعر";
             this.colitemCost.DisplayFormat.FormatString = "c2";
             this.colitemCost.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colitemCost.FieldName = "itemCost";
@@ -344,7 +364,15 @@ namespace AutoCare
             // 
             // colitemQuantity
             // 
-            this.colitemQuantity.Caption = "Quantity";
+            this.colitemQuantity.AppearanceCell.Options.UseTextOptions = true;
+            this.colitemQuantity.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colitemQuantity.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.colitemQuantity.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.colitemQuantity.AppearanceHeader.Options.UseFont = true;
+            this.colitemQuantity.AppearanceHeader.Options.UseTextOptions = true;
+            this.colitemQuantity.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colitemQuantity.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.colitemQuantity.Caption = "الكمية";
             this.colitemQuantity.FieldName = "itemQuantity";
             this.colitemQuantity.MinWidth = 23;
             this.colitemQuantity.Name = "colitemQuantity";
@@ -355,7 +383,15 @@ namespace AutoCare
             // 
             // gridColumn1
             // 
-            this.gridColumn1.Caption = "Total Cost";
+            this.gridColumn1.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn1.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn1.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.gridColumn1.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn1.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn1.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn1.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn1.Caption = "الاجمالي";
             this.gridColumn1.DisplayFormat.FormatString = "c2";
             this.gridColumn1.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn1.FieldName = "TotalCost";
@@ -363,7 +399,7 @@ namespace AutoCare
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowEdit = false;
             this.gridColumn1.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "TotalCost", "Total Price:    {0:c2}")});
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "TotalCost", "الاجمالي:    {0:c2}")});
             this.gridColumn1.UnboundExpression = "[itemCost] * [itemQuantity]";
             this.gridColumn1.UnboundType = DevExpress.Data.UnboundColumnType.Decimal;
             this.gridColumn1.Visible = true;
@@ -394,6 +430,7 @@ namespace AutoCare
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "BillItems";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BillItems";
