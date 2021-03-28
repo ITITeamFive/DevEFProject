@@ -157,6 +157,7 @@ namespace AutoCare
             this.sbtnCancelBill.Size = new System.Drawing.Size(130, 29);
             this.sbtnCancelBill.TabIndex = 1;
             this.sbtnCancelBill.Text = "إلغاء الفاتورة";
+            this.sbtnCancelBill.Click += new System.EventHandler(this.sbtnCancelBill_Click);
             // 
             // sbtnSaveBill
             // 
@@ -167,6 +168,7 @@ namespace AutoCare
             this.sbtnSaveBill.Size = new System.Drawing.Size(130, 29);
             this.sbtnSaveBill.TabIndex = 0;
             this.sbtnSaveBill.Text = "حفظ الفاتورة";
+            this.sbtnSaveBill.Click += new System.EventHandler(this.sbtnSaveBill_Click);
             // 
             // sbAddNewItem
             // 
@@ -494,6 +496,7 @@ namespace AutoCare
             // lookUpSuppliers
             // 
             this.tablePanel1.SetColumn(this.lookUpSuppliers, 0);
+            this.lookUpSuppliers.Dock = System.Windows.Forms.DockStyle.Top;
             this.lookUpSuppliers.Location = new System.Drawing.Point(825, 43);
             this.lookUpSuppliers.Name = "lookUpSuppliers";
             this.lookUpSuppliers.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

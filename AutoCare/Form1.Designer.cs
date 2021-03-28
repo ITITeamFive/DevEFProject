@@ -200,6 +200,7 @@ namespace AutoCare
             this.Name = "Form1";
             this.NavigationControl = this.accordionControl1;
             this.Text = "180AutoCare";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).EndInit();

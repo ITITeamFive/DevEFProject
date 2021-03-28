@@ -13,9 +13,13 @@ namespace AutoCare
 {
     public partial class NewItemForm : DevExpress.XtraEditors.XtraForm
     {
-        public NewItemForm()
+        ucSuppliesBill ucSuppliesBill;
+
+        public NewItemForm(ucSuppliesBill suppliesBill)
         {
             InitializeComponent();
+
+            ucSuppliesBill = suppliesBill;
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)
@@ -53,7 +57,7 @@ namespace AutoCare
                 });
 
                 ucSuppliesBill.context.SaveChanges();
-                ucSuppliesBill.billItems.Add(ucSuppliesBill.context.Items.First(I=>I.itemName == txtName.Text));
+                ucSuppliesBill.AddOneItemToBill(ucSuppliesBill.context.Items.First(I=>I.itemName == txtName.Text));
 
                 Close();
             }

@@ -12,12 +12,13 @@ using AutoCare.models;
 using System.Collections.ObjectModel;
 using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Views.Grid;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AutoCare
 {
     public partial class ucSuppliesBill : DevExpress.XtraEditors.XtraUserControl
     {
-        public static ObservableCollection<Item> billItems = new ObservableCollection<Item>();
+        public static ObservableCollection<TempBillItem> billItems = new ObservableCollection<TempBillItem>();
 
         public static CenterContext context = new CenterContext();
 
@@ -71,7 +72,7 @@ namespace AutoCare
                 {
                     if (XtraMessageBox.Show("هذه المعدة غير موجودة بالمخزن\n هل تريد اضافة معدة جديدة؟", "جديد", MessageBoxButtons.YesNo) == DialogResult.Yes)
                     {
-                        NewItemForm newItemForm = new NewItemForm();
+                        NewItemForm newItemForm = new NewItemForm(this);
                         newItemForm.ShowDialog();
                     }
                 }
@@ -91,15 +92,22 @@ namespace AutoCare
                     return;
                 }
             }
-            i.itemQuantity = 1;
-            billItems.Add(i);
+            
+            billItems.Add(new TempBillItem() { 
+                itemID = i.itemID,
+                itemName = i.itemName,
+                itemModel = i.itemModel,
+                itemQuantity = 1,
+                itemCost = i.itemCost,
+                itemPrice = i.itemPrice
+            });
             txtTotalBefore.Text = (double.Parse(txtTotalBefore.Text) + i.itemCost).ToString();
             txtTotalAfter.Text = txtCash.Text = (double.Parse(txtTotalBefore.Text) - double.Parse(txtTotalBefore.Text) * float.Parse(txtDiscount.Text) / 100).ToString();
         }
 
         private void sbAddNewItem_Click(object sender, EventArgs e)
         {
-            NewItemForm newItemForm = new NewItemForm();
+            NewItemForm newItemForm = new NewItemForm(this);
             newItemForm.ShowDialog();
         }
 
@@ -150,6 +158,68 @@ namespace AutoCare
             }
         }
 
+        private void sbtnSaveBill_Click(object sender, EventArgs e)
+        {
+            if (billItems.Count == 0)
+                return;
+
+            Supplier supplier = lookUpSuppliers.GetSelectedDataRow() as Supplier;
+            SupplierBill supplierBill = new SupplierBill()
+            {
+                Supplier = supplier,
+                billDate = DateTime.Now,
+                billNotes = memoNotes.Text,
+                billTotablPriceBefore = double.Parse(txtTotalBefore.Text),
+                billDiscount = double.Parse(txtDiscount.Text),
+                billTotablPriceAfter = double.Parse(txtTotalAfter.Text),
+                billCash = double.Parse(txtCash.Text)
+            };
+
+            context.SupplierBills.Add(supplierBill);
+            context.SaveChanges();
+
+            foreach (var item in billItems)
+            {
+                context.SupplierBillItems.Add(new SupplierBillItem()
+                {
+                    billID = supplierBill.billID,
+                    itemID = item.itemID,
+                    itemCost = item.itemCost,
+                    itemQuantity = item.itemQuantity
+                });
+                context.SaveChanges();
+
+                Item storeItem = context.Items.Find(item.itemID);
+                storeItem.itemQuantity += item.itemQuantity;
+                context.SaveChanges();
+            }
+
+            sbtnCancelBill_Click(sender, e);
+        }
+
+        private void sbtnCancelBill_Click(object sender, EventArgs e)
+        {
+            foreach (var item in layoutControl1.Controls.OfType<TextEdit>())
+            {
+                item.Text = string.Empty;
+            }
+
+            foreach (var item in tablePanel1.Controls.OfType<TextEdit>())
+            {
+                item.Text = string.Empty;
+            }
+            lookUpSuppliers.Text = string.Empty;
+
+            foreach (var item in tablePanel2.Controls.OfType<TextEdit>())
+            {
+                item.Text = "0";
+            }
+            memoNotes.Text = string.Empty;
+            txtTotalAfter.Text = string.Empty;
+            txtCash.Text = string.Empty;
+            billItems.Clear();
+        }
+
         //private void gridView1_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
         //{
         //    // if I put a datasource like context.clients, I can change the DataRow with Client using explicit cast
@@ -157,4 +227,7 @@ namespace AutoCare
         //    // int id = row.Field<int>("ID");
         //}
     }
+
+    [NotMapped]
+    public class TempBillItem : Item {}
 }
